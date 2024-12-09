@@ -8,8 +8,8 @@ const Logo = ({ theme = "light", className = "" }: LogoProps) => {
     <p className={`font-lato font-black ${className}`}>
       {theme === "light" ? (
         <>
-          <span className="text-brand-primary">Rest</span>
-          <span className="text-brand-text-strong">Away</span>
+          <span className=" text-brand-primary ">Rest</span>
+          <span className="text-brand-text-strong text-gray-500 ">Away</span>
           <span className="text-brand-primary">.</span>
         </>
       ) : (

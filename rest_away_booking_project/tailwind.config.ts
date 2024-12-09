@@ -21,6 +21,15 @@ export default {
         inter: ['var(--font-inter)'],
         lato: ['var(--font-lato)'],
       },
+      brand: {
+        black: "var(--brand-black)",
+        primary: "var(--brand)",
+        "text-strong": "var(--brand-text-strong)",
+        "text-weak": "var(--brand-text-weak)",
+        "stroke-strong": "var(--brand-stroke-strong)",
+        "stroke-weak": "var(--brand-stroke-weak)",
+        "fill": "var(--brand-fill-bg)"
+      }
     },
   },
   plugins: [],

@@ -42,15 +42,15 @@ function processPage(page: Page, index: number, pathname: string) {
     <li key={index}>
       <Link
         href={page.path}
-       className={
-        page.path === "/"
-          ? pathname === page.path
+        className={
+          page.path === "/"
+            ? pathname === page.path
+              ? "font-extrabold"
+              : ""
+            : pathname.startsWith(page.path)
             ? "font-extrabold"
             : ""
-          : pathname.startsWith(page.path)
-          ? "font-extrabold"
-          : ""
-      }
+        }
       >
         {page.title}
       </Link>
@@ -62,14 +62,16 @@ export function Navigation() {
   const pathname = usePathname();
 
   return (
-    <nav  className="flex justify-center items-baseline space-x-4 mt-8">
-    <Logo className="text-2x1"/>
-    <Logo theme="dark" className="text-2x1"/>
-    <ul className="flex justify-end
-     space-x-6 mt-12 mb-8 mr-20">
-      {" "}
-      {pages.map((page, index) => processPage(page, index, pathname))}
-    </ul>
+    <nav className="flex justify-between items-center space-x-5 mt-8 mr-12"> 
+      <Link href="/">
+        <Logo className="text-3xl ml-12" />
+      </Link>
+      <ul
+        className="flex space-x-6 mt-12 mb-8 mr-20 text-xl"
+      >
+        {" "}
+        {pages.map((page, index) => processPage(page, index, pathname))}
+      </ul>
     </nav>
   );
 }

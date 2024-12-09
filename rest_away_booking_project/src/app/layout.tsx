@@ -21,13 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav className="bg-gray-700 p-2 border-b-4  flex items-center justify-between">
-          <img src="/RestAway.png" alt="RestAway logo" className="w-38 h-20" />
-
-          <div className="flex-1 flex justify-end">
-            <Navigation />
-          </div>
-        </nav>
+        <div>
+          <Navigation />
+        </div>
 
         {children}
       </body>
