@@ -45,10 +45,10 @@ function processPage(page: Page, index: number, pathname: string) {
         className={
           page.path === "/"
             ? pathname === page.path
-              ? "font-extrabold"
+              ? "font-extrabold underline"
               : ""
             : pathname.startsWith(page.path)
-            ? "font-extrabold"
+            ? "font-extrabold underline"
             : ""
         }
       >
@@ -67,7 +67,7 @@ export function Navigation() {
         <Logo className="text-3xl ml-12" />
       </Link>
       <ul
-        className="flex space-x-6 mt-12 mb-8 mr-20 text-xl"
+        className="flex space-x-6 mt-12 mb-8 mr-20 text-xl text-gray-500 "
       >
         {" "}
         {pages.map((page, index) => processPage(page, index, pathname))}

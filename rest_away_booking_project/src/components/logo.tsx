@@ -10,7 +10,7 @@ const Logo = ({ theme = "light", className = "" }: LogoProps) => {
         <>
           <span className=" text-brand-primary ">Rest</span>
           <span className="text-brand-text-strong text-gray-500 ">Away</span>
-          <span className="text-brand-primary">.</span>
+          <span className="text-brand-primary text-gray-500 ">.</span>
         </>
       ) : (
         <>
