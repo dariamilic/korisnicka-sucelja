@@ -38,6 +38,7 @@ const pages: Page[] = [
 ];
 
 function processPage(page: Page, index: number, pathname: string) {
+
   return (
     <li key={index}>
       <Link
@@ -71,22 +72,19 @@ function Hamburger() {
   );
 }
 
-
 export function Navigation() {
   const pathname = usePathname();
 
   return (
-    <nav className="container flex justify-between items-center space-x-5 mt-8 mb-12 mr-12"> 
+    <nav className="container flex justify-between items-center space-x-5 mt-8 mb-12 mr-12">
       <Link href="/">
         <Logo className="text-3xl ml-12" />
       </Link>
-      <ul
-        className="flex justify-around space-x-12 mt-12 mb-4 mr-20 text-xl text-gray-500 "
-      >
+      <ul className="flex justify-around space-x-12 mt-12 mb-4 mr-20 text-xl text-gray-500 ">
         {pages.map((page, index) => processPage(page, index, pathname))}
       </ul>
 
-      <Hamburger/>
+      <Hamburger />
     </nav>
   );
 }
