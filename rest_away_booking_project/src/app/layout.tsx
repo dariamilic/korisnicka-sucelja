@@ -26,11 +26,6 @@ export default function RootLayout({
           <Navigation />
         </header>
         <main>{children}</main>
-        <footer className="mt-auto bg-gray-100 text-center py-4">
-          <p className="text-sm text-gray-500">
-            © 2023 RestAway. All rights reserved.
-          </p>
-        </footer>
       </body>
     </html>
   );

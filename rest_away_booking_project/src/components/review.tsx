@@ -5,7 +5,7 @@ export function Review(){
     return (
         <section className="bg-[#f4f1e6] py-20">
   <div className="max-w-screen-lg mx-auto text-center">
-    <h2 className="text-3xl font-semibold mb-12 text-gray-800">Reviews</h2>
+    <h2 className="text-4xl font-semibold mb-12 text-gray-700"> Reviews </h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
       <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow-lg  ">
         <img src="emily.png" alt="Emily Johnson" className="w-24 h-24 rounded-full mb-4 object-cover"/>
