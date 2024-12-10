@@ -1,10 +1,9 @@
 "use client";
 export function Hero() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between px-8 md:px-20 py-12 bg-white ">
+    <section className="flex flex-col md:flex-row items-center justify-around space-x-4  md:px-20 py-12 bg-white ">
 
-      
-      <div className="grid grid-cols-2 gap-4 max-w-md">
+      <div className="grid grid-cols-2 flex-1 gap-4 max-w-md">
 
       <div className="bg-gray-200 rounded-lg overflow-hidden">
           <img
@@ -13,9 +12,9 @@ export function Hero() {
             className="object-cover w-full h-full"
           />
         </div>
-        <div className="bg-beige bg-brown-100 rounded-lg flex items-end justify-center  text-sm  text-gray-700 ">
+        <div className="bg-beige bg-brown-200 rounded-lg flex items-end justify-center  text-sm  text-gray-700 ">
 
-          <ul >
+          <ul className="mb-12 ml-8 font-serif">
           choose what suits you best
           </ul>
         </div>
@@ -37,7 +36,7 @@ export function Hero() {
       </div>
 
       {/* Desna strana - Tekst i CTA */}
-      <div className="mt-8 md:mt-0 md:ml-16 text-center md:text-left max-w-md mr-12">
+      <div className="mt-8 flex-1 md:mt-0 md:ml-16 text-center md:text-left max-w-md mr-12">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-700 mb-4">
           Discover A Place Where Comfort Meets Quality!
         </h1>
@@ -45,7 +44,7 @@ export function Hero() {
           Welcome to simple and seamless booking – where every stay feels like
           home.
         </p>
-        <button className="bg-beige text-gray-700 font-medium px-6 py-3 rounded-lg hover:bg-gray-200 transition">
+        <button className="bg-beige text-brown-300 border-2 border-brown-300  font-medium px-6 py-3 rounded-lg hover:bg-brown-200 hover:border-gray-700 hover:text-gray-700  transition">
           Reserve Now
         </button>
       </div>
