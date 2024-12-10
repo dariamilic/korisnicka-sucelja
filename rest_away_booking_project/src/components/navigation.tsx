@@ -76,7 +76,7 @@ export function Navigation() {
   const pathname = usePathname();
 
   return (
-    <nav className="container flex justify-between items-center space-x-5 mt-8 mb-12 mr-12">
+    <nav className=" flex justify-between items-center space-x-5 mt-8 mb-12 mr-12">
       <Link href="/">
         <Logo className="text-3xl ml-12" />
       </Link>
