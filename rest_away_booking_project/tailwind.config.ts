@@ -11,6 +11,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        brown: {
+          100: '#f5e1a4', // Light brown
+          200: '#d0a15e', // Medium brown
+          300: '#a85a3b', // Dark brown
+          400: '#6b2a14', // Darker brown
+        }
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

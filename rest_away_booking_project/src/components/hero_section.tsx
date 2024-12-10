@@ -13,8 +13,11 @@ export function Hero() {
             className="object-cover w-full h-full"
           />
         </div>
-        <div className="bg-beige rounded-lg flex items-center justify-center text-sm text-gray-700">
+        <div className="bg-beige bg-brown-100 rounded-lg flex items-end justify-center  text-sm  text-gray-700 ">
+
+          <ul >
           choose what suits you best
+          </ul>
         </div>
 
         <div className="bg-gray-200 rounded-lg overflow-hidden">
@@ -34,7 +37,7 @@ export function Hero() {
       </div>
 
       {/* Desna strana - Tekst i CTA */}
-      <div className="mt-8 md:mt-0 md:ml-16 text-center md:text-left max-w-md">
+      <div className="mt-8 md:mt-0 md:ml-16 text-center md:text-left max-w-md mr-12">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-700 mb-4">
           Discover A Place Where Comfort Meets Quality!
         </h1>
