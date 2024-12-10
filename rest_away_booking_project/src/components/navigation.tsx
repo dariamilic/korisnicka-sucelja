@@ -67,7 +67,7 @@ export function Navigation() {
         <Logo className="text-3xl ml-12" />
       </Link>
       <ul
-        className="flex justify-around space-x-12 mt-12 mb-8 mr-20 text-xl text-gray-500 "
+        className="flex justify-around space-x-12 mt-12 mb-4 mr-20 text-xl text-gray-500 "
       >
         {" "}
         {pages.map((page, index) => processPage(page, index, pathname))}
