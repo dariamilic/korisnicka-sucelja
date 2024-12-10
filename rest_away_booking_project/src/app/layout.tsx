@@ -1,5 +1,5 @@
 import { Navigation } from "../components/navigation";
-import { Hero } from "../components/hero_section";
+
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Lato } from "next/font/google";
@@ -25,10 +25,7 @@ export default function RootLayout({
         <header>
           <Navigation />
         </header>
-        <main>
-          <Hero />
-          {children}
-        </main>
+        <main>{children}</main>
         <footer className="mt-auto bg-gray-100 text-center py-4">
           <p className="text-sm text-gray-500">
             © 2023 RestAway. All rights reserved.
