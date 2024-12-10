@@ -14,7 +14,6 @@ export default function Home() {
       <ObjectTypes/>
       <PopularDestinations/>
       <Review/>
-      <Footer/>
     </main>
   );
 }

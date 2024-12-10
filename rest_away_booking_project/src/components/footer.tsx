@@ -10,7 +10,7 @@ export function Footer() {
         <div className="border-t border-gray-400 mb-6"></div>
 
         {/* Footer Content */}
-        <div className="flex flex-col md:flex-row justify-around items-start md:items-center">
+        <div className="flex flex-col md:flex-row justify-around  items-center ">
           {/* Logo and Tagline */}
           <div className="flex flex-col items-start md:items-start mb-6 md:mb-0">
             <Link href="/">
@@ -20,35 +20,35 @@ export function Footer() {
           </div>
 
           {/* Sitemap Section */}
-          <div className="mb-6 md:mb-0">
-            <h2 className="text-lg font-semibold text-gray-700 mb-2">
+          <div className="mb-2 md:mb-0">
+            <h2 className="text-lg font-semibold text-gray-700 mb-2 ">
               Sitemap
             </h2>
             <ul className="text-gray-600 text-sm">
               <li>
-                <a href="#" className="hover:underline">
+                <Link href="/" className="hover:underline">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <Link href="/property" className="hover:underline">
                   Property
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <Link href="/search" className="hover:underline">
                   Search
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <Link href="/account" className="hover:underline">
                   Account
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <Link href="/support" className="hover:underline">
                   Support
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -74,7 +74,7 @@ export function Footer() {
               </a>
             </address>
             {/* Social Media Icons */}
-            <div className="flex mt-4 space-x-4">
+            <div className="flex justify-center mt-4 space-x-4">
               <a href="#" className="text-gray-600 hover:text-blue-600">
                 <svg
                   className="w-6 h-6"
