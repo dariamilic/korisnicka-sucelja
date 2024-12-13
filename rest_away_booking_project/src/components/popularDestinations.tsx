@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 export function PopularDestinations() {
   return (
@@ -10,10 +11,11 @@ export function PopularDestinations() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
           {/* First object -Zagreb */}
           <div className="bg-white p-4 rounded-lg shadow-lg">
-            <img
+            <Image
               src="Zagreb.png"
               alt="Houses on the Sea"
               className="w-full h-48 object-cover rounded-lg mb-4"
+              quality={100}
             />
             <p className="text-center text-lg text-gray-600 font-semibold">
               {" "}
@@ -23,10 +25,11 @@ export function PopularDestinations() {
 
           {/* Second object - Berlin */}
           <div className="bg-white p-4 rounded-lg shadow-lg">
-            <img
+            <Image
               src="Berlin.png"
               alt="Cottages"
               className="w-full h-48 object-cover rounded-lg mb-4"
+              quality={100}
             />
             <p className="text-center text-lg text-gray-600 font-semibold">
               Berlin
@@ -35,10 +38,11 @@ export function PopularDestinations() {
 
           {/* Third object - Split */}
           <div className="bg-white p-4 rounded-lg shadow-lg">
-            <img
+            <Image
               src="Split.png"
               alt="Apartments"
               className="w-full h-48 object-cover rounded-lg mb-4"
+              quality={100}
             />
             <p className="text-center text-lg text-gray-600 font-semibold">
               Split
@@ -47,10 +51,11 @@ export function PopularDestinations() {
 
           {/* Fourth object - Paris */}
           <div className="bg-white p-4 rounded-lg shadow-lg">
-            <img
+            <Image
               src="Paris.png"
               alt="Villas"
               className="w-full h-48 object-cover rounded-lg mb-4"
+              quality={100}
             />
             <p className="text-center text-lg text-gray-600 font-semibold">
               Paris
