@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Logo from "./logo";
+import { useState } from "react";
+import { cn } from "@/lib/utils";
 
 type Page = {
   title: string;
@@ -38,22 +40,22 @@ const pages: Page[] = [
 ];
 
 function processPage(page: Page, index: number, pathname: string) {
-
+  const isActive =
+    page.path === "/" ? pathname === page.path : pathname.startsWith(page.path);
   return (
     <li key={index}>
-      <Link
-        href={page.path}
-        className={
-          page.path === "/"
-            ? pathname === page.path
-              ? "font-extrabold underline"
-              : ""
-            : pathname.startsWith(page.path)
-            ? "font-extrabold underline"
-            : ""
-        }
-      >
-        {page.title}
+      <Link href={page.path}>
+        <span
+          className={cn(
+            { "hover:text-brown-200 hover:bg-brand-primary": !isActive },
+            {
+              " border-2 border-gray-600 rounded-lg px-2 py-1 text-gray-700":
+                isActive,
+            }
+          )}
+        >
+          {page.title}
+        </span>
       </Link>
     </li>
   );
