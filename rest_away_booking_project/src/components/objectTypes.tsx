@@ -11,12 +11,16 @@ export function ObjectTypes() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
           {/* First object - Houses on the sea */}
           <div className="bg-white p-4 rounded-lg shadow-lg">
-            <Image
-              src="kucaNaMoru.png"
-              alt="Houses on the Sea"
-              className="w-full h-48 object-cover rounded-lg mb-4"
-              quality={100}
-            />
+            <div className="relative w-full h-48">
+              <Image
+                src="/kucaNaMoru.png"
+                alt="Houses on the Sea"
+                fill
+                className="object-cover rounded-lg"
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw" // Example sizes for responsiveness
+                priority={false}
+              />
+            </div>
             <p className="text-center text-lg text-gray-600 font-semibold">
               Houses on the sea
             </p>
@@ -24,12 +28,17 @@ export function ObjectTypes() {
 
           {/* Second object - Cottages */}
           <div className="bg-white p-4 rounded-lg shadow-lg">
-            <Image
-              src="kucaUsumi.png"
-              alt="Cottages"
-              className="w-full h-48 object-cover rounded-lg mb-4"
-              quality={100}
-            />
+            <div className="relative w-full h-48">
+              <Image
+                src="/kucaUsumi.png"
+                alt="Cottages"
+                fill
+                className="object-cover rounded-lg"
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                priority={false}
+
+              />
+            </div>
             <p className="text-center text-lg text-gray-600 font-semibold">
               Cottages
             </p>
@@ -37,12 +46,17 @@ export function ObjectTypes() {
 
           {/* Third object - Apartments */}
           <div className="bg-white p-4 rounded-lg shadow-lg">
-            <Image
-              src="zgrada.png"
-              alt="Apartments"
-              className="w-full h-48 object-cover rounded-lg mb-4"
-              quality={100}
-            />
+            <div className="relative w-full h-48">
+              <Image
+                src="/zgrada.png"
+                alt="Apartments"
+                fill
+                className="object-cover rounded-lg"
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                priority={false}
+
+              />
+            </div>
             <p className="text-center text-lg text-gray-600 font-semibold">
               Apartments
             </p>
@@ -50,12 +64,17 @@ export function ObjectTypes() {
 
           {/* Fourth object - Villas */}
           <div className="bg-white p-4 rounded-lg shadow-lg">
-            <Image
-              src="zgradaSaBazenom.png"
-              alt="Villas"
-              className="w-full h-48 object-cover rounded-lg mb-4"
-              quality={100}
-            />
+            <div className="relative w-full h-48">
+              <Image
+                src="/zgradaSaBazenom.png"
+                alt="Villas"
+                fill
+                className="object-cover rounded-lg"
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                priority={false}
+
+              />
+            </div>
             <p className="text-center text-lg text-gray-600 font-semibold">
               Villas
             </p>

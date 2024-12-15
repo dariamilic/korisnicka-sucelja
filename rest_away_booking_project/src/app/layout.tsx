@@ -3,7 +3,7 @@ import { Navigation } from "../components/navigation";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Lato } from "next/font/google";
-import { Footer } from '../components/footer';
+import { Footer } from "../components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,9 +27,8 @@ export default function RootLayout({
           <Navigation />
         </header>
         <main>{children}</main>
-        <footer>
-          <Footer/>
-        </footer>
+
+        <Footer />
       </body>
     </html>
   );

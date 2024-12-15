@@ -9,16 +9,16 @@ export function PopularDestinations() {
           Popular Destinations
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
-          {/* First object -Zagreb */}
+          {/* First object - Zagreb */}
           <div className="bg-white p-4 rounded-lg shadow-lg">
             <Image
-              src="Zagreb.png"
+              src="/Zagreb.png"
               alt="Houses on the Sea"
+              width={500} // Možete prilagoditi veličinu prema potrebama
+              height={300} // Možete prilagoditi veličinu prema potrebama
               className="w-full h-48 object-cover rounded-lg mb-4"
-              quality={100}
             />
             <p className="text-center text-lg text-gray-600 font-semibold">
-              {" "}
               Zagreb
             </p>
           </div>
@@ -26,10 +26,11 @@ export function PopularDestinations() {
           {/* Second object - Berlin */}
           <div className="bg-white p-4 rounded-lg shadow-lg">
             <Image
-              src="Berlin.png"
+              src="/Berlin.png"
               alt="Cottages"
+              width={500} // Možete prilagoditi veličinu prema potrebama
+              height={300} // Možete prilagoditi veličinu prema potrebama
               className="w-full h-48 object-cover rounded-lg mb-4"
-              quality={100}
             />
             <p className="text-center text-lg text-gray-600 font-semibold">
               Berlin
@@ -39,10 +40,11 @@ export function PopularDestinations() {
           {/* Third object - Split */}
           <div className="bg-white p-4 rounded-lg shadow-lg">
             <Image
-              src="Split.png"
+              src="/Split.png"
               alt="Apartments"
+              width={500} // Možete prilagoditi veličinu prema potrebama
+              height={300} // Možete prilagoditi veličinu prema potrebama
               className="w-full h-48 object-cover rounded-lg mb-4"
-              quality={100}
             />
             <p className="text-center text-lg text-gray-600 font-semibold">
               Split
@@ -52,10 +54,11 @@ export function PopularDestinations() {
           {/* Fourth object - Paris */}
           <div className="bg-white p-4 rounded-lg shadow-lg">
             <Image
-              src="Paris.png"
+              src="/Paris.png"
               alt="Villas"
+              width={500} // Možete prilagoditi veličinu prema potrebama
+              height={300} // Možete prilagoditi veličinu prema potrebama
               className="w-full h-48 object-cover rounded-lg mb-4"
-              quality={100}
             />
             <p className="text-center text-lg text-gray-600 font-semibold">
               Paris

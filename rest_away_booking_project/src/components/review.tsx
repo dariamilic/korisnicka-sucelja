@@ -6,19 +6,19 @@ export function Review() {
     <section className="bg-[#f4f1e6] py-20">
       <div className="max-w-screen-lg mx-auto text-center">
         <h2 className="text-4xl font-semibold mb-12 text-gray-700">
-          {" "}
-          Reviews{" "}
+          Reviews
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow-lg  ">
+          <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow-lg">
             <Image
-              src="emily.png"
+              src="/emily.png"
               alt="Emily Johnson"
+              width={96} // Preporučena širina slike
+              height={96} // Preporučena visina slike
               className="w-24 h-24 rounded-full mb-4 object-cover"
-              quality={100}
             />
             <p className="font-medium text-xl text-gray-800">Emily Johnson</p>
-            <p className="text-gray-500 mt-2 ">
+            <p className="text-gray-500 mt-2">
               I really appreciate organization. I like that everything is in one
               place, and this site offers exactly that.
             </p>
@@ -26,10 +26,11 @@ export function Review() {
 
           <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow-lg">
             <Image
-              src="jake.png"
+              src="/jake.png"
               alt="Jake Davis"
+              width={96} // Preporučena širina slike
+              height={96} // Preporučena visina slike
               className="w-24 h-24 rounded-full mb-4 object-cover"
-              quality={100}
             />
             <p className="font-medium text-xl text-gray-800">Jake Davis</p>
             <p className="text-gray-500 mt-2">
@@ -40,10 +41,11 @@ export function Review() {
 
           <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow-lg">
             <Image
-              src="saraha.png"
+              src="/saraha.png"
               alt="Sarah Miller"
+              width={96} // Preporučena širina slike
+              height={96} // Preporučena visina slike
               className="w-24 h-24 rounded-full mb-4 object-cover"
-              quality={100}
             />
             <p className="font-medium text-xl text-gray-800">Sarah Miller</p>
             <p className="text-gray-500 mt-2">
