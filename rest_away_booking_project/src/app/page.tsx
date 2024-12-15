@@ -4,6 +4,7 @@ import { Hero } from "../components/heroSection";
 import {ObjectTypes} from "../components/objectTypes";
 import { Review } from "@/components/review";
 import { Footer } from "@/components/footer";
+import { Navigation } from "@/components/navigation";
 
 
 
