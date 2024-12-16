@@ -42,6 +42,7 @@ const pages: Page[] = [
 type NavigationProps = {
   setIsOpen: (isOpen: boolean) => void;
 };
+
 function processPage(
   page: Page,
   index: number,
@@ -51,7 +52,7 @@ function processPage(
   const isActive =
     page.path === "/" ? pathname === page.path : pathname.startsWith(page.path);
   return (
-    <li key={index}>
+    <li key={index} className="text-center ">
       <Link href={page.path} onClick={onClick}>
         <span
           className={cn(
@@ -69,7 +70,7 @@ function processPage(
   );
 }
 
-export function Navigation() {
+export function Navigation({ setIsOpen }: NavigationProps) {
   const pathname = usePathname();
   const [isOpen, setIsOpenState] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -78,7 +79,7 @@ export function Navigation() {
     const handleClickOutside = (event: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
         setIsOpenState(false);
-        isOpen(false);
+        setIsOpen(false);
       }
     };
 
@@ -87,6 +88,10 @@ export function Navigation() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isOpen]);
+
+  useEffect(() => {
+    setIsOpen(isOpen);
+  }, [isOpen, setIsOpen]);
 
   return (
     <nav className=" flex justify-between items-center space-x-5 mt-8 mb-12 mr-12">

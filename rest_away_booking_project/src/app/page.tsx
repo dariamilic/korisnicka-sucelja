@@ -1,16 +1,19 @@
-
+"use client";
 import { PopularDestinations } from "@/components/popularDestinations";
 import { Hero } from "../components/heroSection";
 import {ObjectTypes} from "../components/objectTypes";
 import { Review } from "@/components/review";
-import { Footer } from "@/components/footer";
 import { Navigation } from "@/components/navigation";
+import { useState } from "react";
 
 
 
 export default function Home() {
+
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <main >
+      <Navigation setIsOpen={setIsOpen}/>
       <Hero />
       <ObjectTypes/>
       <PopularDestinations/>

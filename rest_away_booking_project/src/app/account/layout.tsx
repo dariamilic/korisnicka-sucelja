@@ -1,4 +1,10 @@
-import { Navigation } from "./_components/navigation";
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Account",
+};
+
 export default function AccountLayout({
   children,
 }: {
@@ -6,7 +12,6 @@ export default function AccountLayout({
 }) {
   return (
     <section className="mt-4">
-      <Navigation />
       {children}
     </section>
   );
