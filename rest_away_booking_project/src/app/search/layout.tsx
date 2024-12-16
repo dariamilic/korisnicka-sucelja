@@ -1,4 +1,11 @@
-import { Navigation } from "./_components/navigation";
+
+
+
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Search",
+};
+
 export default function SearchLayout({
   children,
 }: {
@@ -6,7 +13,7 @@ export default function SearchLayout({
 }) {
   return (
     <section className="mt-4">
-      <Navigation />
+  
       {children}
     </section>
   );

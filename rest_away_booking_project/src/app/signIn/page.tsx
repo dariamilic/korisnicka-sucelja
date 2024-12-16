@@ -1,13 +1,15 @@
-import type { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "SignIn",
-};
-
+"use client";
+import { Navigation } from "@/components/navigation";
+import {useState} from "react";
 
 export default function SignIn() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <main className="flex min-h-screen flex-col items-center p-10">
+    <main>
+      <Navigation setIsOpen={setIsOpen} />
+      <header  className="flex min-h-screen flex-col items-center p-10">
       <h1 className="text-6xl font-extrabold tracking-tight">Sign In</h1>
+      </header>
     </main>
   );
 }

@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,9 +9,5 @@ export default function AccountLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <section className="mt-4">
-      {children}
-    </section>
-  );
+  return <section className="mt-4">{children}</section>;
 }
