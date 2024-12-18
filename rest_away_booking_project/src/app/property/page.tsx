@@ -1,5 +1,3 @@
-import { Navigation } from "@/components/navigation";
-import { useState } from "react";
 import Link from "next/link";
 import { getPosts, getPostsCount } from "@/lib/api";
 import type { Post } from "@/lib/api";
@@ -23,7 +21,7 @@ export default function Property() {
 }
 */
 
-type BlogPageProps = {
+type PropertyPageProps = {
   searchParams: { page: string };
 };
 
@@ -53,15 +51,14 @@ function processPost(post:Post){
 
 export default async function Property({
   searchParams,
-}: {
-  searchParams: { [key: string]: string | string[] | undefined };
-}) {
+}: PropertyPageProps) {
 
   const postsCount = await getPostsCount();
   const pagesCount = Math.ceil(postsCount / PAGE_SIZE);
 
-  // Safely handle the page parameter
-  const pageParam = searchParams?.page ?? '1';
+  // Handle searchParams safely
+  const page = await Promise.resolve(searchParams.page);
+  const pageParam = page ?? '1';
   const currentPage = Math.min(
     typeof pageParam === 'string' && /^[1-9][0-9]*$/.test(pageParam) 
       ? parseInt(pageParam, 10) 
