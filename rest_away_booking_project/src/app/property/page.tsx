@@ -75,7 +75,8 @@ export default async function Property({
     <PropertyWrapper>
       <h1 className="text-6xl font-extrabold tracking-tight mb-10">Property</h1>
       <Pagination currentPage={currentPage} pagesCount={pagesCount} />
-      <ul className="w-full space-y-4">{posts.map(processPost)}</ul>
+      <ul className="w-full space-y-4">{posts.map(processPost)}</ul>¸
+      <Pagination currentPage={currentPage} pagesCount={pagesCount} />
     </PropertyWrapper>
   );
 }
