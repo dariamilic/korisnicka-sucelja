@@ -1,6 +1,7 @@
 "use client";
 import { AlertCircle } from "lucide-react";
 import { useEffect } from "react";
+import { PropertyWrapper } from "./_components/PropertyWrapper";
 export default function Error({
   error,
   reset,
@@ -13,6 +14,7 @@ export default function Error({
     console.error(error);
   }, [error]);
   return (
+    <PropertyWrapper>
     <div className="flex min-h-[400px] flex-col items-center justify-center space-y-4 text-center">
       <div className="rounded-full bg-red-100 p-3">
         <AlertCircle className="h-6 w-6 text-red-600" />
@@ -30,5 +32,6 @@ export default function Error({
         Try again
       </button>
     </div>
+    </PropertyWrapper>
   );
 }

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { FileQuestion } from "lucide-react";
 export default function NotFound() {
   return (
+    
     <div className="flex min-h-[400px] flex-col items-center justify-center space-y-4 text-center">
       <div className="rounded-full bg-blue-100 p-3">
         <FileQuestion className="h-6 w-6 text-blue-600" />
