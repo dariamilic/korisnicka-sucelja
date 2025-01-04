@@ -14,7 +14,7 @@ export default function AccountSavedPropertiesPage() {
       
       <section className="bg-gray-100 py-12">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-brand-text-strong text-gray-500 mb-8">
+        <h2 className="text-4xl font-bold text-center text-brand-text-strong text-primary-500 mb-8">
           Saved property
         </h2>
         <div className="grid grid-cols-3 gap-8">
