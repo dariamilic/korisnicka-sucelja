@@ -3,6 +3,7 @@ import { Navigation } from "@/components/navigation";
 import {useState} from "react";
 
 export default function Account() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isOpen, setIsOpen] = useState(false);
   return (
     <main>

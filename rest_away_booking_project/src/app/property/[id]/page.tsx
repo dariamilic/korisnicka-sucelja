@@ -2,7 +2,6 @@ import Link from "next/link";
 import type { Post } from "@/lib/api";
 import { ArrowLeft } from "lucide-react";
 import { Metadata } from "next";
-import Property from "../page";
 import { notFound } from "next/navigation";
 import { PropertyWrapper } from "@/app/property/_components/PropertyWrapper";
 
@@ -11,7 +10,8 @@ export const metadata: Metadata = {
 };
 
 type BlogPostProps = {
-  params: { id: string };
+  params: Promise<{ id: string }>;
+  searchParams?: Promise<any>;
 };
 
 async function getPost(id: string): Promise<Post> {
@@ -20,11 +20,14 @@ async function getPost(id: string): Promise<Post> {
 }
 
 export default async function BlogPost({ params }: BlogPostProps) {
-  const post = await getPost(params.id);
+  const resolvedParams = await Promise.resolve(params);
+  const post = await getPost(resolvedParams.id);
   const { id, title, body } = post;
+
   if (!id) {
     notFound();
   }
+
   return (
     <PropertyWrapper>
       <main className="flex min-h-screen flex-col items-center p-10">

@@ -2,12 +2,11 @@ type PagingInfo = {
     _start?: number;
     _limit?: number;
 };
-
 export type Post = {
-  userId: number;
-  id: number;
-  title: string;
-  body: string;
+    userId: number;
+    id: number;
+    title: string;
+    body: string;
 };
 const PAGE_SIZE = Number(process.env.PAGE_SIZE);
 async function getPostsCount(): Promise<number> {
