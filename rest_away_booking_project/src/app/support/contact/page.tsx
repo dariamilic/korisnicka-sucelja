@@ -1,13 +1,17 @@
 'use client'
 import { Navigation } from "@/components/navigation";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 
 export default function SupportContactPage() {
   const [isOpen, setIsOpen] = useState(false);
+  // Wrap setIsOpen in useCallback
+     const handleSetIsOpen = useCallback((state: boolean) => {
+      setIsOpen(state);
+    }, []);
 
     return (
     <>
-      <Navigation setIsOpen={setIsOpen} />
+      <Navigation isOpen={isOpen } setIsOpen={handleSetIsOpen} />
       <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10">
       {/* Header */}
       <div className="text-center mb-10">

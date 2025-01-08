@@ -1,6 +1,6 @@
 'use client';
 import { Navigation } from "@/components/navigation";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -44,10 +44,14 @@ const FAQ = () => {
 
 export default function SupportFAQsPage() {
   const [isOpen, setIsOpen] = useState(false);
+  // Wrap setIsOpen in useCallback
+     const handleSetIsOpen = useCallback((state: boolean) => {
+      setIsOpen(state);
+    }, []);
 
   return (
     <>
-      <Navigation setIsOpen={setIsOpen} />
+      <Navigation isOpen={isOpen} setIsOpen={handleSetIsOpen} />
       <FAQ />
     </>
   );

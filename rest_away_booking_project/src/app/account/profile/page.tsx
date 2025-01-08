@@ -1,17 +1,22 @@
 'use client';
 import './profile.css';
 import { Navigation } from "@/components/navigation";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import Image from "next/image";
 
 
 export default function AccountProfilePage() {
   const [isOpen, setIsOpen] = useState(false);
 
+   // Wrap setIsOpen in useCallback
+   const handleSetIsOpen = useCallback((state: boolean) => {
+    setIsOpen(state);
+  }, []);
+
   return (
     <>
       {/* Navigacija */}
-      <Navigation setIsOpen={setIsOpen} />
+      <Navigation isOpen={isOpen} setIsOpen={handleSetIsOpen} />
       
       {/* Glavni sadržaj stranice */}
       <main className="profile-container">

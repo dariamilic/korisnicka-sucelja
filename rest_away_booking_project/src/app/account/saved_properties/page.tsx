@@ -1,10 +1,15 @@
 'use client';
 import { Navigation } from "@/components/navigation";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import Image from "next/image";
 
 export default function AccountSavedPropertiesPage() {
   const [isOpen, setIsOpen] = useState(false);
+
+    // Wrap setIsOpen in useCallback
+     const handleSetIsOpen = useCallback((state: boolean) => {
+      setIsOpen(state);
+    }, []);
 
   // Podaci za svaku nekretninu
   const properties = [
@@ -44,7 +49,7 @@ export default function AccountSavedPropertiesPage() {
 
   return (
     <>
-      <Navigation setIsOpen={setIsOpen} />
+      <Navigation  isOpen={isOpen} setIsOpen={handleSetIsOpen} />
 
       <section className="bg-gray-100 py-12">
         <div className="container mx-auto px-4">

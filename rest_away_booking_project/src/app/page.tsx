@@ -11,9 +11,10 @@ import { useState } from "react";
 export default function Home() {
 
   const [isOpen, setIsOpen] = useState(false);
+   
   return (
     <main >
-      <Navigation setIsOpen={setIsOpen}/>
+      <Navigation isOpen={isOpen} setIsOpen={setIsOpen}/>
       <Hero />
       <ObjectTypes/>
       <PopularDestinations/>

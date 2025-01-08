@@ -1,10 +1,14 @@
 'use client';
 import { Navigation } from "@/components/navigation";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import Image from 'next/image';
 
 export default function SupportRentalGuidesPage() {
   const [isOpen, setIsOpen] = useState(false);
+  // Wrap setIsOpen in useCallback
+     const handleSetIsOpen = useCallback((state: boolean) => {
+      setIsOpen(state);
+    }, []);
 
   // Podaci za svaku sekciju (slika, naslov, tekst)
   const sections = [
@@ -42,7 +46,7 @@ export default function SupportRentalGuidesPage() {
 
   return (
     <>
-      <Navigation setIsOpen={setIsOpen} />
+      <Navigation isOpen={isOpen} setIsOpen={handleSetIsOpen} />
       <div className="bg-gray-100 min-h-screen">
         {/* Hero Section with Background Image */}
         <div className="relative h-96 flex items-center justify-center">

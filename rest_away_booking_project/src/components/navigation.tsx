@@ -40,7 +40,8 @@ const pages: Page[] = [
 ];
 
 type NavigationProps = {
-  setIsOpen: (isOpen: boolean) => void;
+  isOpen: boolean;
+  setIsOpen: (state: boolean) => void;
 };
 
 function processPage(
