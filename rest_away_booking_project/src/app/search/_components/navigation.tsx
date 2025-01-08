@@ -39,7 +39,7 @@ function processPage(page: Page, index: number, pathname: string) {
     </li>
   );
 }
-export function Navigation() {
+export function SideNavigation() {
   const pathname = usePathname();
   console.log(pathname);
   return (

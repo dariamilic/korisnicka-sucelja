@@ -3,6 +3,7 @@ import './profile.css';
 import { Navigation } from "@/components/navigation";
 import { useState, useCallback } from "react";
 import Image from "next/image";
+import { SideNavigation } from '../_components/navigation';
 
 
 export default function AccountProfilePage() {
@@ -17,6 +18,7 @@ export default function AccountProfilePage() {
     <>
       {/* Navigacija */}
       <Navigation isOpen={isOpen} setIsOpen={handleSetIsOpen} />
+      <SideNavigation/>
       
       {/* Glavni sadržaj stranice */}
       <main className="profile-container">
@@ -28,7 +30,7 @@ export default function AccountProfilePage() {
         {/* Sekcija za profilnu sliku */}
         <div className="profile-section">
           <div className="profile-picture">
-            <Image src="/emily.png" alt="Profile" />
+            <Image alt="Profile Picture" src="/emily.png" width={100} height={100} />
             <button className="update-btn">Update</button>
           </div>
         </div>

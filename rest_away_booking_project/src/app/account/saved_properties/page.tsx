@@ -1,5 +1,6 @@
 'use client';
 import { Navigation } from "@/components/navigation";
+import { SideNavigation } from "../_components/navigation";
 import { useState, useCallback } from "react";
 import Image from "next/image";
 
@@ -50,6 +51,10 @@ export default function AccountSavedPropertiesPage() {
   return (
     <>
       <Navigation  isOpen={isOpen} setIsOpen={handleSetIsOpen} />
+      <div className="flex justify-center p-1 border-b">
+      <SideNavigation />
+      </div>
+      
 
       <section className="bg-gray-100 py-12">
         <div className="container mx-auto px-4">
