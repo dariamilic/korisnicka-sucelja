@@ -83,15 +83,14 @@ export function Navigation({ setIsOpen }: NavigationProps) {
       }
     };
 
+    setIsOpen(isOpen);
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isOpen]);
-
-  useEffect(() => {
-    setIsOpen(isOpen);
   }, [isOpen, setIsOpen]);
+
+ 
 
   return (
     <nav className=" flex justify-between items-center space-x-5 mt-8 mb-12 mr-12">
@@ -106,7 +105,7 @@ export function Navigation({ setIsOpen }: NavigationProps) {
           type="button"
           className="inline-flex items-center justify-center p-2 text-main-text-black hover:text-secondary-text-black focus:outline-none"
           aria-controls="mobile-menu"
-          aria-expanded={isOpen}
+         // aria-expanded={isOpen}
         >
           {!isOpen ? (
             <svg
