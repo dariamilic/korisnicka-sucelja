@@ -2,6 +2,8 @@
 import './profile.css';
 import { Navigation } from "@/components/navigation";
 import { useState } from "react";
+import Image from "next/image";
+
 
 export default function AccountProfilePage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +23,7 @@ export default function AccountProfilePage() {
         {/* Sekcija za profilnu sliku */}
         <div className="profile-section">
           <div className="profile-picture">
-            <img src="/emily.png" alt="Profile" />
+            <Image src="/emily.png" alt="Profile" />
             <button className="update-btn">Update</button>
           </div>
         </div>

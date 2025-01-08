@@ -9,9 +9,13 @@ export const metadata: Metadata = {
   title: "Property",
 };
 
+interface SearchParams {
+  page?: string;
+}
+
 type BlogPostProps = {
   params: Promise<{ id: string }>;
-  searchParams?: Promise<any>;
+  searchParams?: Promise<SearchParams>;
 };
 
 async function getPost(id: string): Promise<Post> {

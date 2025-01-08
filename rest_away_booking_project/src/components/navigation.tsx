@@ -40,6 +40,7 @@ const pages: Page[] = [
 ];
 
 type NavigationProps = {
+  isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
 };
 
@@ -70,9 +71,8 @@ function processPage(
   );
 }
 
-export function Navigation({ setIsOpen }: NavigationProps) {
-  const pathname = usePathname();
-  const [isOpen, setIsOpenState] = useState(false);
+export const Navigation: React.FC<NavigationProps> = ({ isOpen, setIsOpen }) => {  const pathname = usePathname();
+  const [isOpenState, setIsOpenState] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -87,7 +87,7 @@ export function Navigation({ setIsOpen }: NavigationProps) {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isOpen]);
+  }, [isOpen,setIsOpen]);
 
   useEffect(() => {
     setIsOpen(isOpen);
