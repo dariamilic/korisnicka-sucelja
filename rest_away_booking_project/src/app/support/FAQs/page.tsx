@@ -1,5 +1,6 @@
 'use client';
 import { Navigation } from "@/components/navigation";
+import { SideNavigation } from "../_components/navigation";
 import { useState, useCallback } from "react";
 
 const FAQ = () => {
@@ -52,6 +53,8 @@ export default function SupportFAQsPage() {
   return (
     <>
       <Navigation isOpen={isOpen} setIsOpen={handleSetIsOpen} />
+      <SideNavigation />
+      
       <FAQ />
     </>
   );

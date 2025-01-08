@@ -1,5 +1,6 @@
 'use client';
 import { Navigation } from "@/components/navigation";
+import { SideNavigation } from "../_components/navigation";
 import { useState, useCallback } from "react";
 import Image from 'next/image';
 
@@ -47,7 +48,9 @@ export default function SupportRentalGuidesPage() {
   return (
     <>
       <Navigation isOpen={isOpen} setIsOpen={handleSetIsOpen} />
-      <div className="bg-gray-100 min-h-screen">
+      <div className="flex justify-center p-1 border-b">
+             <SideNavigation/>
+             </div>      <div className="bg-gray-100 min-h-screen">
         {/* Hero Section with Background Image */}
         <div className="relative h-96 flex items-center justify-center">
           {/* Background Image */}

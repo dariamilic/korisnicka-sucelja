@@ -1,5 +1,6 @@
 'use client'
 import { Navigation } from "@/components/navigation";
+import { SideNavigation } from "../_components/navigation";
 import { useState, useCallback } from "react";
 
 export default function SupportContactPage() {
@@ -12,6 +13,9 @@ export default function SupportContactPage() {
     return (
     <>
       <Navigation isOpen={isOpen } setIsOpen={handleSetIsOpen} />
+      <div className="flex justify-center bg-gray-100 p-1 border-b">
+             <SideNavigation/>
+             </div>
       <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10">
       {/* Header */}
       <div className="text-center mb-10">
