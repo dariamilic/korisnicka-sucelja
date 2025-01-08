@@ -22,7 +22,7 @@ export default function Property() {
 */
 
 type PropertyPageProps = {
-  searchParams: { page: string };
+  searchParams: Promise<{ page: string }>;
 };
 
 const PAGE_SIZE = Number(process.env.PAGE_SIZE) || 6;
@@ -49,9 +49,8 @@ function processPost(post:Post){
 }
 
 
-export default async function Property({
-  searchParams,
-}: PropertyPageProps) {
+export default async function Property(props: PropertyPageProps) {
+  const searchParams = await props.searchParams;
 
   const postsCount = await getPostsCount();
   const pagesCount = Math.ceil(postsCount / PAGE_SIZE);
@@ -68,7 +67,7 @@ export default async function Property({
 
   const _start = (currentPage - 1) * PAGE_SIZE;
   const _limit = PAGE_SIZE;
-  
+
 
   const posts = await getPosts({ _start, _limit });
   return(

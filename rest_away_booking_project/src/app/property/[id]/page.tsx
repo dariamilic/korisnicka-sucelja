@@ -19,7 +19,8 @@ async function getPost(id: string): Promise<Post> {
   return data.json();
 }
 
-export default async function BlogPost({ params }: BlogPostProps) {
+export default async function BlogPost(props: BlogPostProps) {
+  const params = await props.params;
   const resolvedParams = await Promise.resolve(params);
   const post = await getPost(resolvedParams.id);
   const { id, title, body } = post;
