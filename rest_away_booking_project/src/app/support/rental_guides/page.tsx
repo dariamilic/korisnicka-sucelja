@@ -14,33 +14,33 @@ export default function SupportRentalGuidesPage() {
   // Podaci za svaku sekciju (slika, naslov, tekst)
   const sections = [
     {
-      image: "/kucaUsumi.png",
+      image: "/location.png",
       alt: "Section 1 Image",
       title: "Check the Location.",
       text: "Ensure the accommodation is close to the places you plan to visit, like attractions, beaches, or city centers. Use maps to avoid inconvenient distances.",
     },
     {
-      image: "/zgrada.png",
+      image: "/review.png",
       alt: "Section 2 Image",
       title: "Read Reviews",
       text: "Guest reviews reveal the true quality of the accommodation and service. Focus on cleanliness, communication, and the accuracy of the listing.",
     },
     {
-      image: "/zgradaSaBazenom.png",
+      image: "/pricing.png",
       alt: "Section 3 Image",
       title: "Understand Pricing and Additional Fees",
       text: "Beyond the base price, look out for hidden fees such as cleaning charges, taxes, or deposits.",
     },
     {
-      image: "/black_house_forest.png",
-      alt: "Review Cancellation Policies",
-      title: "Naslov 4",
+      image: "/policies.png",
+      alt: "Section 4 Image",
+      title: "Review Cancellation Policies",
       text: "Always read the cancellation policy to understand your rights if plans change unexpectedly.",
     },
     {
-      image: "/two_brow_chair.png",
-      alt: "Reach Out to the Host",
-      title: "Naslov 5",
+      image: "/reach.png",
+      alt: "Section 4 Image",
+      title: "Reach Out to the Host",
       text: "Ask questions about details not covered in the description, such as Wi-Fi, parking, or extra amenities.",
     },
   ];
@@ -83,7 +83,7 @@ export default function SupportRentalGuidesPage() {
               <Image
                 src={section.image}
                 alt={section.alt}
-                width={500}
+                width={350}
                 height={300}
                 className="rounded-lg"
               />
