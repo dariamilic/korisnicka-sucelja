@@ -48,9 +48,10 @@ export default function SupportRentalGuidesPage() {
   return (
     <>
       <Navigation isOpen={isOpen} setIsOpen={handleSetIsOpen} />
-      <div className="flex justify-center p-1 border-b">
+      <div className="flex justify-center p-1 mb-10">
              <SideNavigation/>
-             </div>      <div className="bg-gray-100 min-h-screen">
+      </div> 
+        <div className=" min-h-screen">
         {/* Hero Section with Background Image */}
         <div className="relative h-96 flex items-center justify-center">
           {/* Background Image */}
@@ -76,23 +77,23 @@ export default function SupportRentalGuidesPage() {
             key={index}
             className={`flex flex-col ${
               index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-            } items-center lg:items-start py-12 px-6 lg:px-20 gap-8`}
+            } items-center justify-centlg:items-start py-12 px-6 lg:px-20 gap-8`}
           >
             {/* Section Image */}
             <div className="lg:w-1/2">
               <Image
                 src={section.image}
                 alt={section.alt}
-                width={350}
-                height={300}
+                width={250}
+                height={200}
                 className="rounded-lg"
               />
             </div>
 
             {/* Section Text */}
             <div className="lg:w-1/2">
-              <h2 className="text-2xl font-serif text-primary-500 mb-4">{section.title}</h2>
-              <p className="text-gray-700">{section.text}</p>
+              <h2 className="text-3xl font-bold font-serif text-primary-500 mb-4">{section.title}</h2>
+              <p className="text-xl text-gray-700">{section.text}</p>
             </div>
           </div>
         ))}

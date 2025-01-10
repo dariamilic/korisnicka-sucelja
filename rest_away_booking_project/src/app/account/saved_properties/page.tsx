@@ -51,12 +51,12 @@ export default function AccountSavedPropertiesPage() {
   return (
     <>
       <Navigation  isOpen={isOpen} setIsOpen={handleSetIsOpen} />
-      <div className="flex justify-center p-1 border-b">
+      <div className="flex justify-center p-1 mb-4">
       <SideNavigation />
       </div>
       
 
-      <section className="bg-gray-100 py-12">
+      <section className="bg-gray-100 py-12 w-full mx-0 px-0">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-brand-text-strong text-primary-500 mb-8">
             Saved property

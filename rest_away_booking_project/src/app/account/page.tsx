@@ -13,11 +13,15 @@ export default function Account() {
   return (
     <main>
       <Navigation isOpen={isOpen} setIsOpen={handleSetIsOpen} />
+            {/* Sporedna navigacija između glavne navigacije i sadržaja */}
+                  <div className="flex justify-center p-1">
+                  <SideNavigation/>
+                  </div>
       {/* Glavni sadržaj */}
       <div className="relative h-screen w-full">
         {/* Pozadinska slika */}
         <div
-           className="absolute inset-0"
+           className="absolute inset-0 blur(15px)"
            style={{
              backgroundImage: "url('/prazanzid.jpg')", // Promijeni u naziv svoje slike
            }}
