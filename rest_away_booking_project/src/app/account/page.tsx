@@ -32,7 +32,7 @@ export default function Account() {
           {/* Glavni naslov */}
           <div className="text-center text-white mb-16">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              It looks like you're not logged in yet.
+              It looks like you&apos;re not logged in yet.
             </h1>
           </div>
 
@@ -53,7 +53,7 @@ export default function Account() {
             {/* Desni tekst i gumb */}
             <div className="flex flex-col items-center w-1/2 text-right text-white">
               <p className="text-xl md:text-2xl font-semibold mb-4">
-                Don’t have a profile? Sign up today and join our community!
+                Don&apos;t have a profile? Sign up today and join our community!
               </p>
               <Link href="/signUp">
                 <button className=" mt-2 py-2 px-4 bg-[#b2935c] text-white rounded-lg hover:bg-[#5B597A] focus:ring-2 focus:ring-offset-2 focus:ring-[#5B597A]">
