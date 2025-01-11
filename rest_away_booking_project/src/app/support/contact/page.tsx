@@ -13,10 +13,10 @@ export default function SupportContactPage() {
     return (
     <>
       <Navigation isOpen={isOpen } setIsOpen={handleSetIsOpen} />
-      <div className="flex justify-center bg-gray-100 p-1 border-b">
+      <div className="flex justify-center p-1">
              <SideNavigation/>
              </div>
-      <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10">
+      <div className=" min-h-screen flex flex-col items-center py-10">
       {/* Header */}
       <div className="text-center mb-10">
         <h1 className="text-4xl font-bold text-center text-brand-text-strong text-primary-500 mb-8">Contact Us</h1>
@@ -25,7 +25,7 @@ export default function SupportContactPage() {
       {/* Content Section */}
       <div className="flex flex-wrap justify-center max-w-4xl bg-white shadow-md rounded-lg overflow-hidden">
         {/* Get In Touch Section */}
-        <div className="w-full md:w-1/2 p-6 bg-gray-50">
+        <div className="w-full md:w-1/2 p-6 bg-gray-100">
           <h2 className="text-2xl font-bold text-primary-500 mb-4">Get In Touch</h2>
           <p className="text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan eros, sit amet auctor nunc. Nullam ac purus.</p>
           <ul className="space-y-4">
@@ -90,7 +90,7 @@ export default function SupportContactPage() {
 
             <button
               type="submit"
-              className="w-full bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-400"
+              className="w-full mt-2 py-2 px-4 bg-brown-200 text-white rounded-lg hover:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-[#5B597A]"
             >
               Submit
             </button>

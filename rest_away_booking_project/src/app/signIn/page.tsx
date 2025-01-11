@@ -3,11 +3,11 @@ import Link from "next/link";
 
 const SignInPage = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-800 bg-opacity-50 relative">
+    <div className="flex items-center justify-center min-h-screen bg-opacity-50">
       {/* Left Section with Image and Text */}
       <div className="absolute inset-0 flex">
         <div
-          className="w-1/2 bg-cover bg-center relative rounded-lg"
+          className="w-1/2 bg-cover bg-center relative"
           style={{ backgroundImage: "url('/signin.jpg')" }}
         >
           <div className="absolute top-4 left-4">
@@ -27,7 +27,7 @@ const SignInPage = () => {
         </div>
 
         {/* Right Section with Form */}
-        <div className="w-1/2 flex items-center justify-center">
+        <div className="w-1/2 h-full flex items-center justify-center bg-gray-400">
           <div className="relative bg-white rounded-lg shadow-lg w-80 sm:w-96 p-6">
             <h2 className="text-2xl font-bold text-gray-700 mb-6 text-center">Sign In</h2>
             <form className="space-y-4">
@@ -57,14 +57,14 @@ const SignInPage = () => {
                 </div>
                 <Link
                   href="/forgot-password"
-                  className="text-sm text-primary-500 hover:underline"
+                  className="text-sm text-brown-200 hover:underline"
                 >
                   Forgot Password?
                 </Link>
               </div>
               <button
                 type="submit"
-                className="w-full mt-2 py-2 px-4 bg-[#b2935c] text-white rounded-lg hover:bg-[#5B597A] focus:ring-2 focus:ring-offset-2 focus:ring-[#5B597A]"
+                className="w-full mt-2 py-2 px-4 bg-brown-200 text-white rounded-lg hover:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-[#5B597A]"
               >
                 SIGN IN
               </button>

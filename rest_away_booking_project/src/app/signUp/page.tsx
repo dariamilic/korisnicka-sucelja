@@ -3,10 +3,10 @@ import Link from "next/link";
 
 const SignUpPage = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-500 bg-opacity-50 relative">
+    <div className="flex items-center justify-center min-h-screen bg-opacity-50">
       {/* Left Section with Image and Text */}
       <div className="absolute inset-0 flex">
-        <div className="w-1/2 bg-cover bg-center relative" style={{ backgroundImage: "url('/signup.jpg')" }}>
+        <div className="w-1/2 h-full bg-cover bg-center relative" style={{ backgroundImage: "url('/signup.jpg')" }}>
           <div className="absolute top-4 left-4">
             <Link
               href="/"
@@ -25,7 +25,7 @@ const SignUpPage = () => {
         </div>
 
         {/* Right Section with Form */}
-        <div className="w-1/2 flex items-center justify-center">
+        <div className="w-1/2 h-full flex items-center justify-center bg-gray-400">
           <div className="relative bg-white rounded-lg shadow-lg w-80 sm:w-96 p-6">
             <h2 className="text-2xl font-bold text-gray-700 mb-6 text-center">Sign Up</h2>
             <form className="space-y-4">
@@ -57,13 +57,13 @@ const SignUpPage = () => {
                 <label className="block text-sm font-medium text-gray-600">Date of Birth</label>
                 <input
                   type="date"
-                  className="block w-full mt-1 px-4 py-2 border rounded-lg focus:ring-primary-500 focus:border-primary-500"
+                  className="block w-full mt-1 px-4 py-2 border rounded-lg focus:ring-brown-200 focus:border-primary-500"
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-600">Gender</label>
                 <select
-                  className="block w-full mt-1 px-4 py-2 border rounded-lg focus:ring-primary-500 focus:border-primary-500"
+                  className="block w-full mt-1 px-4 py-2 border rounded-lg focus:ring-brown-200 focus:border-primary-500"
                 >
                   <option value="">Select your gender</option>
                   <option value="male">Male</option>
@@ -90,7 +90,7 @@ const SignUpPage = () => {
               </div>
               <button
                 type="submit"
-                className="w-full mt-2 py-2 px-4 bg-[#b2935c] text-white rounded-lg hover:bg-[#5B597A] focus:ring-2 focus:ring-offset-2 focus:ring-[#5B597A]"
+                className="w-full mt-2 py-2 px-4 bg-brown-200 text-white rounded-lg hover:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-[#5B597A]"
               >
                 SIGN ME UP
               </button>

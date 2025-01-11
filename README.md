@@ -28,6 +28,7 @@
 - Link to Assignment 2: [**Assignment 2 User personas and information architecture**](https://dariamilic.github.io/korisnicka-sucelja/assigments/assigment_2/HCI.pdf) <!-- Replace with actual URL -->
 - Link to Assignment 3: [**Assignment 3 Next.js - Deploying Application**](https://korisnicka-sucelja-git-main-dariamilics-projects.vercel.app/) <!-- Replace with actual URL -->
 - Link to Assignment 4: [**Assignment 4 Low/High-fidelity prototype**](assigments/assigment_4/README.md)
+- Link to Assignment 5: [**Assignment 5  Dynamic routes, data fetching**](https://korisnicka-sucelja-sandy.vercel.app/)
 
 ## Project Requirements
 

@@ -1,6 +1,7 @@
 "use client";
 import { Navigation } from "@/components/navigation";
 import {useState, useCallback} from "react";
+import React from "react";
 import { SideNavigation } from "./_components/navigation";
 
 
@@ -16,7 +17,7 @@ export default function Account() {
     <main>
       <Navigation isOpen={isOpen} setIsOpen={handleSetIsOpen} />
        {/* Sporedna navigacija između glavne navigacije i sadržaja */}
-             <div className="flex justify-center bg-gray-100 p-1 border-b">
+             <div className="flex justify-center p-1">
              <SideNavigation/>
              </div>
       <header  className="flex min-h-screen flex-col items-center p-10">
