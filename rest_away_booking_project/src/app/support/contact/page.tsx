@@ -27,7 +27,7 @@ export default function SupportContactPage() {
         {/* Get In Touch Section */}
         <div className="w-full md:w-1/2 p-6 bg-gray-100">
           <h2 className="text-2xl font-bold text-primary-500 mb-4">Get In Touch</h2>
-          <p className="text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan eros, sit amet auctor nunc. Nullam ac purus.</p>
+          <p className="text-gray-600 mb-6">Have questions, suggestions, or need additional information? Feel free to contact us – we’re here to help!</p>
           <ul className="space-y-4">
             <li className="flex items-center">
               <span className="text-primary-500 w-6 h-6 mr-4">📍</span>
@@ -63,7 +63,7 @@ export default function SupportContactPage() {
               <input
                 type="text"
                 id="name"
-                className="w-full border-gray-300 rounded-lg shadow-sm focus:ring-primary-500 focus:border-primary-500"
+                className="w-full border border-primary-300 rounded px-4 py-2 focus:outline-none focus:ring focus:ring-gray-400"
                 placeholder="Your Name"
               />
             </div>
@@ -73,7 +73,7 @@ export default function SupportContactPage() {
               <input
                 type="email"
                 id="email"
-                className="w-full border-gray-300 rounded-lg shadow-sm focus:ring-primary-500 focus:border-primary-500"
+                className="w-full border border-primary-300 rounded px-4 py-2 focus:outline-none focus:ring focus:ring-gray-400"
                 placeholder="Your Email"
               />
             </div>
@@ -83,7 +83,7 @@ export default function SupportContactPage() {
               <textarea
                 id="message"
                 rows={4}
-                className="w-full border-gray-300 rounded-lg shadow-sm focus:ring-primary-500 focus:border-primary-500"
+                className="w-full border border-primary-300 rounded px-4 py-2 focus:outline-none focus:ring focus:ring-gray-400"
                 placeholder="Your Message"
               ></textarea>
             </div>
