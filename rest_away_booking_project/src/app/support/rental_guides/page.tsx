@@ -51,7 +51,7 @@ export default function SupportRentalGuidesPage() {
       <div className="flex justify-center p-1 mb-10">
              <SideNavigation/>
       </div> 
-        <div className=" min-h-screen">
+        <div className="min-h-screen">
         {/* Hero Section with Background Image */}
         <div className="relative h-96 flex items-center justify-center">
           {/* Background Image */}
@@ -80,12 +80,12 @@ export default function SupportRentalGuidesPage() {
             } items-center justify-centlg:items-start py-12 px-6 lg:px-20 gap-8`}
           >
             {/* Section Image */}
-            <div className="lg:w-1/2">
+            <div className="lg:w-1/">
               <Image
                 src={section.image}
                 alt={section.alt}
-                width={250}
-                height={200}
+                width={150}
+                height={300}
                 className="rounded-lg"
               />
             </div>

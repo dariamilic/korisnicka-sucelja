@@ -13,7 +13,7 @@ export default function AccountLayout({
     <section>
    
       {/* Glavni sadržaj stranice */}
-      <main className="p-6">
+      <main className="p-0">
         {children}
       </main>
     </section>

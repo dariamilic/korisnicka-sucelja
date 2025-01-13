@@ -1,10 +1,13 @@
 import { createClient } from 'contentful';
 
+const spaceID = process.env.NEXT_PUBLIC_CONNTENTFUL_SPACE_ID!;
+const accessToken = process.env.NEXT_PUBLIC_CONNTENTFUL_ACCESS_KEY!;
 
 const client = createClient({
   space: process.env.NEXT_PUBLIC_CONNTENTFUL_SPACE_ID || '',
-  accessToken: process.env.NEXT_PUBLIC_CONNTENTFUL_ACCESS_TOKEN || '',
+  accessToken: process.env.NEXT_PUBLIC_CONNTENTFUL_ACCESS_KEY || '',
 });
+
 export async function generateStaticParams() {
   const res = await client.getEntries({ content_type: 'objave' });
   return res.items.map((item) => ({
