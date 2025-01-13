@@ -42,4 +42,5 @@ export function SideNavigation() {
       {pages.map((page, index) => processPage(page, index, pathname))}
     </ul>
   );
+  
 }
