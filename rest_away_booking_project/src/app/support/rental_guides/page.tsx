@@ -101,3 +101,4 @@ export default function SupportRentalGuidesPage() {
     </>
   );
 }
+//dodano samo kako bi promjerila github, baca bug nece mi pushat
