@@ -20,7 +20,7 @@ export async function fetchContentData() {
 }
 
 const Home = () => {
-  const [objave, setObjave] = useState<any[]>([]);
+  const [objave, setObjave] = useState([]);
   const [priceRange, setPriceRange] = useState(0);
   const [location, setLocation] = useState('');
   const [isOpen, setIsOpen] = useState(false);
@@ -51,6 +51,7 @@ const Home = () => {
   }, []);
 
   console.log(objave);
+  console.log(location);
 
   return (
     <>

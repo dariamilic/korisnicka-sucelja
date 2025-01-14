@@ -1,8 +1,7 @@
 "use client";
 import { Navigation } from "@/components/navigation";
 import { SideNavigation } from "./_components/navigation";
-import { useState, useCallback, useEffect } from "react";
-import AccountProfilePage from "./profile/page";
+import { useState, useCallback} from "react";
 
 export default function Account() {
   const [isOpen, setIsOpen] = useState(false);
