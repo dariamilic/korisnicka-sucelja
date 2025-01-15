@@ -45,7 +45,7 @@ export default function ObjaveCard({ objave }: { objave: Objave }) {
       </div>
       <div className="card-footer text-left">
         <Link href={`/search/${slug}`} className="text-brown-200 underline">
-          See this
+          Read more
         </Link>
       </div>
     </div>
