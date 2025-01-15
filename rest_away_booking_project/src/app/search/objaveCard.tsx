@@ -28,26 +28,27 @@ export default function ObjaveCard({ objave }: { objave: Objave }) {
   return (
     
 
-    <div className="card">
-      <div className="card-image">
-        {imageUrl && (
-          <Image 
-            src={imageUrl}
-            alt={title}
-            width={300}
-            height={300}
-          />
-        )}
-      </div>
-      <div className="card-content text-gray-700 text-bold">
-        <h4>{title}</h4>
-        <p>filters: {filters}</p>
-      </div>
-      <div className="card-footer text-left">
-        <Link href={`/search/${slug}`} className="text-brown-200 underline">
-          Read more
-        </Link>
-      </div>
+    <div className="card w-72 h-[350px] bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden flex flex-col">
+    <div className="card-image w-full h-[200px] overflow-hidden">
+      {imageUrl && (
+        <Image
+          src={imageUrl}
+          alt={title}
+          width={300}
+          height={200}
+          className="object-cover w-full h-full"
+        />
+      )}
     </div>
+    <div className="card-content text-gray-700 font-bold p-4 flex-grow">
+      <h4 className="text-lg">{title}</h4>
+    </div>
+    <div className="card-footer p-4 mt-auto">
+      <Link href={`/search/${slug}`} className="text-brown-200">
+        See more
+      </Link>
+    </div>
+  </div>
+  
   );
 }
