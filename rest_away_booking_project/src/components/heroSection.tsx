@@ -4,6 +4,20 @@ import Image from "next/image";
 export function Hero() {
   return (
     <section className="flex flex-col md:flex-row items-center justify-around space-x-4 md:px-20 py-12 bg-white">
+        {/* Desna strana - Tekst i CTA */}
+        <div className="mt-8 flex-1 md:mt-0 md:ml-16 text-center md:text-left max-w-md mr-12">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-700 mb-4">
+          Discover A Place Where Comfort Meets Quality!
+        </h1>
+        <p className="text-lg text-gray-500 mb-6">
+          Welcome to simple and seamless booking – where every stay feels like
+          home.
+        </p>
+        <button className="bg-beige text-brown-200 border-2 border-brown-200 font-medium px-6 py-3 rounded-lg hover:bg-brown-200 hover:border-gray-700 hover:text-gray-700 transition">
+          Reserve Now
+        </button>
+      </div>
+
       <div className="grid grid-cols-2 flex-1 gap-4 max-w-md">
         {/* Slika 1 */}
         <div className="bg-gray-200 rounded-lg overflow-hidden">
@@ -47,19 +61,7 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Desna strana - Tekst i CTA */}
-      <div className="mt-8 flex-1 md:mt-0 md:ml-16 text-center md:text-left max-w-md mr-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-700 mb-4">
-          Discover A Place Where Comfort Meets Quality!
-        </h1>
-        <p className="text-lg text-gray-500 mb-6">
-          Welcome to simple and seamless booking – where every stay feels like
-          home.
-        </p>
-        <button className="bg-beige text-brown-200 border-2 border-brown-200 font-medium px-6 py-3 rounded-lg hover:bg-brown-200 hover:border-gray-700 hover:text-gray-700 transition">
-          Reserve Now
-        </button>
-      </div>
+    
     </section>
   );
 }
