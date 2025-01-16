@@ -111,7 +111,7 @@ const Home = () => {
             <div>
               {/* Location Filter */}
               <div className="mb-6">
-                <div className="bg-brown-200 text-brown-600 font-semibold text-sm rounded-full py-1 px-4 inline-block mb-2 underline">
+                <div className="bg-brown-200 text-brown-600 font-semibold text-sm rounded-full py-1 px-4 inline-block mb-2">
                   Location
                 </div>
                 <input
@@ -124,7 +124,7 @@ const Home = () => {
 
               {/* Price Range Filter */}
               <div className="mb-6">
-                <div className="bg-gray-300 text-brown-600 text-sm rounded-full py-1 px-4 inline-block mb-2">
+                <div className="bg-brown-200 text-brown-600 font-semibold text-sm rounded-full py-1 px-4 inline-block mb-2">
                   Price range
                 </div>
                 <input

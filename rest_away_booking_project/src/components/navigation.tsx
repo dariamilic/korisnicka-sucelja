@@ -100,7 +100,7 @@ export function Navigation({ setIsOpen }: NavigationProps) {
       </Link>
 
       {/* Hamburger Menu Button */}
-      <div className="-mr-2 flex md:hidden">
+      <div className="-mr-2 flex xl:hidden">
         <button
           onClick={() => setIsOpenState(!isOpen)}
           type="button"
@@ -132,7 +132,7 @@ export function Navigation({ setIsOpen }: NavigationProps) {
       </div>
 
       {/* Desktop Menu */}
-      <ul className="hidden md:flex justify-around space-x-12 mt-12 mb-4 mr-20 text-xl text-gray-500  ">
+      <ul className="hidden xl:flex justify-around space-x-12 mt-12 mb-4 mr-20 text-xl text-gray-500  ">
         {pages.map((page, index) => processPage(page, index, pathname))}
       </ul>
 
