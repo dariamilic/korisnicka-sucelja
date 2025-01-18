@@ -33,7 +33,7 @@ const Home = () => {
       setObjave(data);
       setFilteredObjave(data); // Default prikaz
     };
-    getData();
+   getData();
   }, []);
 
   // Filter funkcionalnost
