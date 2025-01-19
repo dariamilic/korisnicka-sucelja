@@ -1,7 +1,9 @@
 "use client";
 import Link from "next/link";
+import { supabase } from "@/lib/supabase"; 
 
 const SignInPage = () => {
+
   return (
     <div className="flex items-center justify-center min-h-screen bg-opacity-50">
       {/* Desktop Version */}

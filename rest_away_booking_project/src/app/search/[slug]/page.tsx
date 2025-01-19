@@ -14,7 +14,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function getData(slug: string) {
+export async function getData(slug: string)  {
   const res = await client.getEntries({
     content_type: 'objave',
     'fields.slug': slug,
@@ -84,7 +84,7 @@ export default async function objavaDetalji({ params }: { params: { slug: string
             <p>{typeof fields.about === 'string' ? fields.about : 'No description available'}</p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold py-6">What's included:</h3>
+            <h3 className="text-xl font-semibold py-6">Whats&apos; included:</h3>
             <ul className="list-disc pl-5">
               {filtersArray.map((filter, index) => (
                 <li key={index}>{filter}</li>
