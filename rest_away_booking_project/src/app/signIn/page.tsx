@@ -35,6 +35,16 @@ const SignInPage = () => {
     }
   };
 
+  const setNewView = async () => {
+    const {data, error} = await supabase
+      .from('views')
+      .insert([{ name: 'sign_in' }]);
+
+      if (data) console.log(data)
+      if (error) console.log(error)
+      };
+
+
   return (
     <div className="flex items-center justify-center min-h-screen bg-opacity-50">
       {/* Desktop Version */}
@@ -64,7 +74,7 @@ const SignInPage = () => {
               Sign In
             </h2>
             {error && <p className="text-red-500">{error}</p>}
-            <Form data={data} handleChange={handleChange} handleSignIn={handleSignIn} />
+            <Form data={data} handleChange={handleChange} handleSignIn={handleSignIn}  />
           </div>
         </div>
       </div>

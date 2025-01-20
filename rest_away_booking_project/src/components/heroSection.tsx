@@ -1,7 +1,12 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
+
 
 export function Hero() {
+
+  
+
   return (
     <section className="flex flex-col md:flex-row items-center justify-around space-x-4 md:px-20 py-12 bg-white">
         {/* Desna strana - Tekst i CTA */}
@@ -13,9 +18,9 @@ export function Hero() {
           Welcome to simple and seamless booking – where every stay feels like
           home.
         </p>
-        <button className="bg-beige text-brown-200 border-2 border-brown-200 font-medium px-6 py-3 rounded-lg hover:bg-brown-200 hover:border-gray-700 hover:text-gray-700 transition">
+        <Link href="comming_soon"  className="bg-beige text-brown-200 border-2 border-brown-200 font-medium px-6 py-3 rounded-lg hover:bg-brown-200 hover:border-gray-700 hover:text-gray-700 transition">
           Reserve Now
-        </button>
+        </Link>
       </div>
 
       <div className="grid grid-cols-2 flex-1 gap-4 max-w-md">
