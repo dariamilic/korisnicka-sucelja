@@ -22,7 +22,6 @@ const Home = () => {
   const [filteredObjave, setFilteredObjave] = useState<any[]>([]);
   const [priceRange, setPriceRange] = useState(0);
   const [location, setLocation] = useState("");
-  const [sizeRange, setSizeRange] = useState(0);
   const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
   const [isOpen, setIsOpen] = useState(false);
@@ -50,8 +49,7 @@ const Home = () => {
       // Filtriranje prema ceni (ukoliko postoji polje za cenu)
       const matchesPrice = !fields.price || fields.price <= priceRange || priceRange === 0;
 
-      // Filtriranje prema veličini (ukoliko postoji polje za veličinu)
-      const matchesSize = !fields.size || fields.size <= sizeRange || sizeRange === 0;
+     
 
       // Filtriranje prema odabranim filterima
       const matchesFilters = selectedFilters.every((filter) =>
@@ -63,15 +61,15 @@ const Home = () => {
         ? selectedTypes.some((type) => fields.title?.toLowerCase().includes(type.toLowerCase()))
         : true;
 
-      return matchesLocation && matchesPrice && matchesSize && matchesFilters && matchesType;
+      return matchesLocation && matchesPrice  && matchesFilters && matchesType;
     });
 
     setFilteredObjave(filtered);
-  }, [location, priceRange, sizeRange, selectedFilters, selectedTypes, objave]);
+  }, [location, priceRange, selectedFilters, selectedTypes, objave]);
 
-  const handleSizeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSizeRange(Number(e.target.value));
-  };
+  //const handleSizeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    //setSizeRange(Number(e.target.value));
+  //};
 
   const handlePriceChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPriceRange(Number(e.target.value));
