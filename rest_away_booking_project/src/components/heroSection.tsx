@@ -18,7 +18,7 @@ export function Hero() {
           Welcome to simple and seamless booking – where every stay feels like
           home.
         </p>
-        <Link href="comming_soon"  className="bg-beige text-brown-200 border-2 border-brown-200 font-medium px-6 py-3 rounded-lg hover:bg-brown-200 hover:border-gray-700 hover:text-gray-700 transition">
+        <Link href="/comming_soon"  className="bg-beige text-brown-200 border-2 border-brown-200 font-medium px-6 py-3 rounded-lg hover:bg-brown-200 hover:border-gray-700 hover:text-gray-700 transition">
           Reserve Now
         </Link>
       </div>

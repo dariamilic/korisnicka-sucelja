@@ -1,49 +1,51 @@
-'use client';
-import { useState } from 'react';
-import { supabase } from '@/lib/supabase';
-import Link from 'next/link'; // ispravan Link iz Next.js
+"use client";
+import { useState } from "react";
+import { supabase } from "@/lib/supabase";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const SignInPage = () => {
-  const [data, setData] = useState({ email: '', password: '' });
-  const [error, setError] = useState('');
+  const [data, setData] = useState<{ email: string; password: string }>({
+    email: "",
+    password: "",
+  });
+  const [error, setError] = useState(""); // Greška pri prijavi
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setData((prevData) => ({ ...prevData, [name]: value }));
   };
 
+  const router = useRouter();
+
   const handleSignIn = async (e: React.FormEvent) => {
     e.preventDefault(); // Zaustavi defaultno ponašanje forme
 
-    setError(''); // Resetiraj grešku prije svakog pokušaja
+    setError(""); // Resetiraj grešku prije svakog pokušaja
     try {
-      const { data: userData, error: signInError } = await supabase.auth.signInWithPassword({
-        email: data.email,
-        password: data.password,
-      });
+      const { data: userData, error: signInError } =
+        await supabase.auth.signInWithPassword({
+          email: data.email,
+          password: data.password,
+        });
+
+      if (userData) console.log(userData);
 
       if (signInError) {
         throw new Error(signInError.message); // Prikaz poruke o grešci
       }
 
       if (userData) {
-        console.log('User signed in successfully:', userData);
+
+        console.log("User signed in successfully:", userData);
+        router.refresh();
         // Možeš dodati navigaciju ili redirect ovdje
       }
+      router.push("/");
     } catch (err: any) {
-      setError(err.message || 'Something went wrong, please try again.');
+      setError(err.message || "Something went wrong, please try again.");
     }
   };
-
-  const setNewView = async () => {
-    const {data, error} = await supabase
-      .from('views')
-      .insert([{ name: 'sign_in' }]);
-
-      if (data) console.log(data)
-      if (error) console.log(error)
-      };
-
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-opacity-50">
@@ -74,7 +76,11 @@ const SignInPage = () => {
               Sign In
             </h2>
             {error && <p className="text-red-500">{error}</p>}
-            <Form data={data} handleChange={handleChange} handleSignIn={handleSignIn}  />
+            <Form
+              data={data}
+              handleChange={handleChange}
+              handleSignIn={handleSignIn}
+            />
           </div>
         </div>
       </div>
@@ -94,7 +100,11 @@ const SignInPage = () => {
             Sign In
           </h2>
           {error && <p className="text-red-500">{error}</p>}
-          <Form data={data} handleChange={handleChange} handleSignIn={handleSignIn} />
+          <Form
+            data={data}
+            handleChange={handleChange}
+            handleSignIn={handleSignIn}
+          />
         </div>
       </div>
     </div>
@@ -124,7 +134,9 @@ const Form: React.FC<FormProps> = ({ data, handleChange, handleSignIn }) => (
       />
     </div>
     <div>
-      <label className="block text-sm font-medium text-gray-600">Password</label>
+      <label className="block text-sm font-medium text-gray-600">
+        Password
+      </label>
       <input
         type="password"
         name="password"
