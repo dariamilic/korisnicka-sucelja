@@ -21,7 +21,8 @@ interface Objave {
 export default function ObjaveCard({ objave }: { objave: Objave }) {
  // @typescript-eslint/no-unused-vars
 //  const { title, about, filters, slug, rating, thumbnail } = objave.fields;
-  const { title, filters, slug, thumbnail } = objave.fields;
+//  const { title, filters, slug, thumbnail } = objave.fields;
+  const { title, slug, thumbnail } = objave.fields;
 
   const imageUrl = thumbnail?.fields?.file?.url ? `https:${thumbnail.fields.file.url}` : '';
 
