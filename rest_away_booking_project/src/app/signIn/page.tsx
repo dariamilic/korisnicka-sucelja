@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { supabase } from '@/lib/supabase';
-import { Link } from 'lucide-react';
+import Link from 'next/link'; // ispravan Link iz Next.js
 
 const SignInPage = () => {
   const [data, setData] = useState({ email: '', password: '' });
@@ -13,12 +13,25 @@ const SignInPage = () => {
   };
 
   const handleSignIn = async (e: React.FormEvent) => {
-    e.preventDefault();
-    const { error } = await supabase.auth.signInWithPassword({ email: data.email, password: data.password });
-    if (error) {
-      setError(error.message);
-    } else {
-      // Handle successful sign-in
+    e.preventDefault(); // Zaustavi defaultno ponašanje forme
+
+    setError(''); // Resetiraj grešku prije svakog pokušaja
+    try {
+      const { data: userData, error: signInError } = await supabase.auth.signInWithPassword({
+        email: data.email,
+        password: data.password,
+      });
+
+      if (signInError) {
+        throw new Error(signInError.message); // Prikaz poruke o grešci
+      }
+
+      if (userData) {
+        console.log('User signed in successfully:', userData);
+        // Možeš dodati navigaciju ili redirect ovdje
+      }
+    } catch (err: any) {
+      setError(err.message || 'Something went wrong, please try again.');
     }
   };
 

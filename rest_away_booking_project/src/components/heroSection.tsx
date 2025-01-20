@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section className="flex flex-col md:flex-row items-center justify-around space-x-4 md:px-20 py-12 bg-white">
         {/* Desna strana - Tekst i CTA */}
-        <div className="mt-8 flex-1 md:mt-0 md:ml-16 text-center md:text-left max-w-md mr-12">
+        <div className="mt-8 flex-1 md:mt-0 md:ml-16 text-center md:text-left max-w-md mr-12 ml-12 mb-8">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-700 mb-4">
           Discover A Place Where Comfort Meets Quality!
         </h1>
@@ -32,7 +32,7 @@ export function Hero() {
         </div>
 
         {/* Tekst */}
-        <div className="bg-beige bg-brown-200 rounded-lg flex items-end justify-center text-sm text-gray-700">
+        <div className="bg-beige bg-brown-200 rounded-lg flex items-end justify-center text-sm text-gray-700 mr-4">
           <ul className="mb-12 ml-8 font-serif">choose what suits you best</ul>
         </div>
 
@@ -49,7 +49,7 @@ export function Hero() {
         </div>
 
         {/* Slika 3 */}
-        <div className="bg-gray-200 rounded-lg overflow-hidden">
+        <div className="bg-gray-200 rounded-lg overflow-hidden mr-4">
           <Image
             src="/two_brow_chair.png" // zamijeni pravim putanjama slika
             alt="Living room"
