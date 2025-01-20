@@ -1,8 +1,11 @@
 "use client";
+import { useRouter } from "next/router";
 import Logo from "./logo";
 import Link from "next/link";
 
 export function Footer() {
+  
+
   return (
     <footer className="bg-white border-t border-gray-300 py-8">
       <div className="container mx-auto px-6 md:px-12">
@@ -75,7 +78,7 @@ export function Footer() {
             </address>
             {/* Social Media Icons */}
             <div className="flex justify-center mt-4 space-x-4">
-              <Link href="comming_soon" className="text-gray-600 hover:text-blue-600">
+              <Link href="comming_soon"  className="text-gray-600 hover:text-blue-600">
                 <svg
                   className="w-6 h-6"
                   fill="currentColor"
@@ -105,3 +108,4 @@ export function Footer() {
     </footer>
   );
 }
+
