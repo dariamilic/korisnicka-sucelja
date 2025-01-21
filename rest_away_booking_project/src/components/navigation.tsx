@@ -13,6 +13,7 @@ type Page = {
   path: `/${string}`;
 };
 
+/*
 const pages: Page[] = [
   { title: "Home", path: "/" },
   {
@@ -40,7 +41,7 @@ const pages: Page[] = [
     path: "/signIn",
   },
 ];
-
+*/
 
 type NavigationProps = {
   isOpen: boolean;
@@ -144,6 +145,9 @@ export function Navigation({ setIsOpen }: NavigationProps) {
           { title: "Sign In", path: "/signIn" },
         ];
   
+
+        
+
     return (
       <nav className="flex justify-between items-center space-x-5 mt-8 mb-4 mr-12">
         <Link href="/">
@@ -184,7 +188,7 @@ export function Navigation({ setIsOpen }: NavigationProps) {
   
         {/* Desktop Menu */}
         <ul className="hidden lg:flex justify-around space-x-12 mt-12 mb-4 mr-20 text-xl text-gray-500">
-          {pages.map((page, index) => processPage(page, index, usePathname()))}
+          {pages.map((page, index) => processPage(page, index, pathname))}
           {user && (
             <li>
               <button

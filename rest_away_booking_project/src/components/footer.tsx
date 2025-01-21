@@ -1,5 +1,4 @@
 "use client";
-import { useRouter } from "next/router";
 import Logo from "./logo";
 import Link from "next/link";
 
