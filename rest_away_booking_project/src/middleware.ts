@@ -13,7 +13,7 @@ export async function middleware(req: NextRequest) {
   console.log("session", session);
 
   if (!session) {
-    return NextResponse.rewrite(new URL("/signIn", req.url));
+    return NextResponse.rewrite(new URL("/", req.url));
   }
   return res;
 }
