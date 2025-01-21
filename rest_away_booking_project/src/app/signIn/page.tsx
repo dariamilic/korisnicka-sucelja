@@ -30,7 +30,7 @@ const SignInPage = () => {
         });
 
       if (userData) console.log(userData);
-
+        
       if (signInError) {
         throw new Error(signInError.message); // Prikaz poruke o grešci
       }
