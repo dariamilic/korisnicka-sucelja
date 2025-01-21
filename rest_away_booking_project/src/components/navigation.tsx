@@ -149,6 +149,37 @@ export function Navigation({ setIsOpen }: NavigationProps) {
         <Link href="/">
           <Logo className="text-3xl ml-12" />
         </Link>
+          {/* Hamburger Menu Button */}
+      <div className="-mr-2 flex xl:hidden">
+        <button
+          onClick={() => setIsOpenState(!isOpen)}
+          type="button"
+          className="inline-flex items-center justify-center p-2 text-main-text-black hover:text-secondary-text-black focus:outline-none"
+          aria-controls="mobile-menu"
+         // aria-expanded={isOpen}
+        >
+          {!isOpen ? (
+            <svg
+              className="block h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          ) : (
+            ""
+            
+          )}
+        </button>
+      </div>
   
         {/* Desktop Menu */}
         <ul className="hidden xl:flex justify-around space-x-12 mt-12 mb-4 mr-20 text-xl text-gray-500">
