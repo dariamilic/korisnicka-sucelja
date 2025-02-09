@@ -15,7 +15,7 @@ const SignUpPage = () => {
     email: "",
     password: "",
     date_of_birth: "",
-    phone_number: 0,
+    phone_number: +385,
   });
   
   const [error, setError] = useState(""); // Greška pri prijavi

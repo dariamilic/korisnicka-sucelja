@@ -28,8 +28,7 @@ export default function ObjaveCard({ objave }: { objave: Objave }) {
 
   return (
     
-
-    <div className="card w-72 h-[350px] bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden flex flex-col">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden">
     <div className="card-image w-full h-[200px] overflow-hidden">
       {imageUrl && (
         <Image
