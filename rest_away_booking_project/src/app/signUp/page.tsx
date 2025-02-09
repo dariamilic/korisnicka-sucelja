@@ -89,6 +89,14 @@ const SignUpPage = () => {
               handleChange={handleChange}
               handleSignUp={handleSignUp}
             />
+             <div className="mt-4 text-center">
+            <p className="text-gray-600">
+             Already have an account?{" "}
+              <Link href="/signIn" className="text-brown-200 hover:underline">
+                Sign In
+              </Link>
+            </p>
+          </div>
           </div>
         </div>
       </div>
@@ -114,6 +122,14 @@ const SignUpPage = () => {
             handleChange={handleChange}
             handleSignUp={handleSignUp}
           />
+          <div className="mt-4 text-center">
+            <p className="text-gray-600">
+             Already have an account?{" "}
+              <Link href="/signIn" className="text-brown-200 hover:underline">
+                Sign In
+              </Link>
+            </p>
+          </div>
         </div>
       </div>
     </div>
