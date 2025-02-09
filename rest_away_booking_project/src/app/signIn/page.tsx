@@ -96,7 +96,7 @@ const SignInPage = () => {
       </div>
       <div className="flex md:hidden w-full h-full items-center justify-center">
         <div className="relative bg-white rounded-lg shadow-lg w-80 sm:w-96 p-6">
-          <h2 className="text-2xl font-bold text-gray-700 mb-6 text-center">
+          <h2 className="bg-brown-500 hover:bg-brown-600 text-2xl font-bold text-gray-700 mb-6 text-center">
             Sign In
           </h2>
           {error && <p className="text-red-500">{error}</p>}
@@ -149,9 +149,9 @@ const Form: React.FC<FormProps> = ({ data, handleChange, handleSignIn }) => (
     <div>
       <button
         type="submit"
-        className="w-full py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-      >
-        Sign In
+        className="w-full mt-2 py-2 px-4 bg-brown-200 text-white rounded-lg hover:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-[#5B597A]"
+        >
+        SIGN IN
       </button>
     </div>
   </form>
