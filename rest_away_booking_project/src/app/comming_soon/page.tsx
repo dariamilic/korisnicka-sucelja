@@ -17,7 +17,7 @@ export default function AccountBookingHistoryPage() {
       
       
       <main className="flex min-h-screen flex-col items-center justify-center p-6 text-center">
-        <h1 className="text-5xl font-bold tracking-tight leading-normal">Comming soon ....
+        <h1 className="text-5xl font-bold tracking-tight leading-normal">Comming soon...
         </h1>
       </main>
       </>

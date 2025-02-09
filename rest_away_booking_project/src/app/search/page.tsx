@@ -108,9 +108,9 @@ const Home = () => {
           {/* Open Filters Button */}
           <button
             onClick={() => setIsOpen(!isOpen)} // Toggle filters visibility
-            className="bg-blue-500 text-white py-2 px-4 rounded-full mb-4"
+            className="bg-brown-500 text-gray-700 text-2xl py-4 px-12 rounded-full mb-6  font-bold"
           >
-            {isOpen ? "Close Filters" : "Open Filters"}
+            {isOpen ? "Close Filters <<" : "Open Filters >>"}
           </button>
 
           {/* Filter Section - This will be visible when isOpen is true */}
@@ -339,8 +339,8 @@ const Home = () => {
       <div className="w-full pr-24 py-6">
             <div>
               {/* Location Filter */}
-              <div className="mb-6">
-                <div className="bg-brown-200 text-brown-600 font-semibold text-sm rounded-full py-1 px-4 inline-block mb-2 underline">
+              <div className="mb-10">
+                <div className="bg-brown-200 text-brown-600 font-semibold text-sm rounded-full py-1 px-4 inline-block mb-2 ">
                   Location
                 </div>
                 <input
@@ -352,8 +352,8 @@ const Home = () => {
               </div>
 
               {/* Price Range Filter */}
-              <div className="mb-6">
-                <div className="bg-gray-300 text-brown-600 text-sm rounded-full py-1 px-4 inline-block mb-2">
+              <div className="mb-10">
+                <div className="bg-brown-200 text-brown-600 font-semibold text-sm rounded-full py-1 px-4 inline-block mb-2">
                   Price range
                 </div>
                 <input
@@ -363,12 +363,16 @@ const Home = () => {
                   className="w-full"
                   value={priceRange}
                   onChange={handlePriceChange}
+                  style={{
+                    background: `linear-gradient(to right, #F59E0B 0%, #F59E0B ${priceRange}%, #D1D5DB ${priceRange}%, #D1D5DB 100%)`,
+                    filter: "invert(20%) sepia(50%) saturate(100%) hue-rotate(5deg)",
+                  }}
                 />
                 <div className="text-sm text-gray-600 mt-2">Selected Price: {priceRange}€</div>
               </div>
 
               {/* Amenities Filter */}
-              <div className="mb-6">
+              <div className="mb-10">
                 <div className="bg-brown-200 text-brown-600 font-semibold text-sm rounded-full py-1 px-4 inline-block mb-2">
                   Amenities Filter
                 </div>
@@ -412,7 +416,7 @@ const Home = () => {
               </div>
 
               {/* Luxury Amenities Filter */}
-              <div className="mb-6">
+              <div className="mb-10">
                 <div className="bg-brown-200 text-brown-600 font-semibold text-sm rounded-full py-1 px-4 inline-block mb-2">
                   Luxury Amenities
                 </div>
@@ -456,7 +460,7 @@ const Home = () => {
               </div>
 
               {/* Practical Options Filter */}
-              <div className="mb-6">
+              <div className="mb-10">
                 <div className="bg-brown-200 text-brown-600 font-semibold text-sm rounded-full py-1 px-4 inline-block mb-2">
                   Practical Options
                 </div>
@@ -479,7 +483,7 @@ const Home = () => {
               </div>
 
               {/* Type of Space Filter */}
-              <div className="mb-6">
+              <div className="mb-10">
                 <div className="bg-brown-200 text-brown-600 font-semibold text-sm rounded-full py-1 px-4 inline-block mb-2">
                   Type of Space
                 </div>
