@@ -104,7 +104,7 @@ const Home = () => {
           {/* Left Filters Section */}
 
 
-          <div className="md:hidden">
+          <div className="md:hidden ">
           {/* Open Filters Button */}
           <button
             onClick={() => setIsOpen(!isOpen)} // Toggle filters visibility
@@ -115,7 +115,7 @@ const Home = () => {
 
           {/* Filter Section - This will be visible when isOpen is true */}
           {isOpen && (
-          <div className="w-full md:w-1/4 pr-24 py-6">
+          <div className="w-full md:w-1/4 pr-24 py-6 ml-10">
             <div>
               {/* Location Filter */}
               <div className="mb-10">
