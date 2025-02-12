@@ -21,21 +21,18 @@ export default function AccountProfilePage() {
           Change your profile picture and adjust your account information.
         </p>
 
-        {/* Sekcija za profilnu sliku i inpute */}
-        <div className="flex justify-between items-start space-x-14">
-          {/* Input Fields */}
-          <div className="w-2/3 space-y-4 mr-10">
+        {/* Desktop verzija */}
+        <div className="hidden md:flex items-start space-x-20">
+          <div className="w-2/3 space-y-4">
             {[
               { label: "Name", id: "name", type: "text", placeholder: "Emily" },
               { label: "Mail", id: "email", type: "email", placeholder: "Emily@company.com" },
               { label: "Password", id: "password", type: "password", placeholder: "********" },
             ].map(({ label, id, type, placeholder }) => (
               <div key={id} className="flex justify-between items-center space-x-2">
-          <div className="flex-1">
-            <label htmlFor={id} className="block font-bold text-brown-200 mb-1">{label}</label>
-            <input id={id} type={type} placeholder={placeholder} className="w-full p-2 border border-gray-300 rounded-md" />
-          </div>
-            <button className="px-4 py-2 bg-brown-200 text-white rounded-md hover:bg-gray-400 self-center mt-6">Update</button>
+                <label htmlFor={id} className="block font-bold text-brown-200">{label}</label>
+                <input id={id} type={type} placeholder={placeholder} className="flex-1 p-2 border border-gray-300 rounded-md" />
+                <button className="px-4 py-2 bg-brown-200 text-white rounded-md hover:bg-gray-400">Update</button>
               </div>
             ))}
           </div>
@@ -44,6 +41,32 @@ export default function AccountProfilePage() {
           <div className="w-1/2 flex flex-col self-start mr-10 translate-x-[280px] translate-y-[-62px]">
           <Image alt="Profile Picture" src="/noPhoto.jpg" width={400} height={400} className="object-cover" />
             <button className="px-6 py-2 bg-brown-200 text-white rounded-md hover:bg-gray-400">Update</button>
+          </div>
+        </div>
+
+        {/* Mobilna verzija */}
+        <div className="md:hidden flex flex-col items-start text-center space-y-4">
+          {/* Input polja */}
+          <div className="w-full max-w-[90%] space-y-4">
+            {[
+              { label: "Name", id: "name", type: "text", placeholder: "Emily" },
+              { label: "Mail", id: "email", type: "email", placeholder: "Emily@company.com" },
+              { label: "Password", id: "password", type: "password", placeholder: "********" },
+            ].map(({ label, id, type, placeholder }) => (
+              <div key={id} className="flex flex-col items-start space-y-1">
+                <label htmlFor={id} className="font-bold text-brown-800">{label}</label>
+                <div className="flex w-full space-x-2">
+                  <input id={id} type={type} placeholder={placeholder} className="flex-1 p-2 border border-gray-300 rounded-md" />
+                  <button className="px-4 py-2 bg-brown-200 text-white rounded-md hover:bg-gray-400">Update</button>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Profilna slika i gumb za ažuriranje */}
+          <div className="flex flex-col items-center space-y-2">
+            <Image alt="Profile Picture" src="/noPhoto.jpg" width={200} height={200} className="object-cover rounded-md" />
+            <button className="px-4 py-2 bg-brown-200 text-white rounded-md hover:bg-gray-400">Update Picture</button>
           </div>
         </div>
       </main>
