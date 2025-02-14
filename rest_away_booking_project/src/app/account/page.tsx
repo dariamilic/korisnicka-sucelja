@@ -15,7 +15,7 @@ export default function AccountProfilePage() {
       {/* Navigacija */}
       <Navigation isOpen={isOpen} setIsOpen={handleSetIsOpen} />
       {/* Glavni sadržaj stranice */}
-      <main className="max-w-3xl mx-auto p-6 font-sans ml-6">
+      <main className="max-w-3xl mx-auto p-6 font-sans ml-0 md:ml-64">
         <h1 className="text-2xl font-bold mb-2">General Profile</h1>
         <p className="text-gray-600 mb-6">
           Change your profile picture and adjust your account information.
@@ -64,7 +64,7 @@ export default function AccountProfilePage() {
           </div>
 
           {/* Profilna slika i gumb za ažuriranje */}
-          <div className="flex flex-col items-center space-y-2">
+          <div className="flex flex-col items-center space-y-2 pl-6">
             <Image alt="Profile Picture" src="/noPhoto.jpg" width={200} height={200} className="object-cover rounded-md" />
             <button className="px-4 py-2 bg-brown-200 text-white rounded-md hover:bg-gray-400">Update Picture</button>
           </div>
