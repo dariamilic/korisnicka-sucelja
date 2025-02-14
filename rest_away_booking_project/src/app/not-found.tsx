@@ -1,8 +1,10 @@
 import Link from "next/link";
 import React from "react";
 
+
 export default function NotFound() {
   return (
+    
     <section className="w-full h-screen flex flex-col justify-center items-center"> 
       <h1 className="text-5xl text-gray-700 font-bold tracking-tight leading-normal mb-4">
         Oops!
