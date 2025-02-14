@@ -23,16 +23,16 @@ export default function AccountProfilePage() {
 
         {/* Desktop verzija */}
         <div className="hidden lg:flex items-start space-x-20">
-          <div className="w-2/3 space-y-4">
+        <div className="w-2/3 space-y-4">
             {[
               { label: "Name", id: "name", type: "text", placeholder: "Emily" },
               { label: "Mail", id: "email", type: "email", placeholder: "Emily@company.com" },
               { label: "Password", id: "password", type: "password", placeholder: "********" },
             ].map(({ label, id, type, placeholder }) => (
-              <div key={id} className="flex justify-between items-center space-x-2">
+              <div key={id} className="flex flex-col space-y-2">
                 <label htmlFor={id} className="block font-bold text-brown-200">{label}</label>
                 <input id={id} type={type} placeholder={placeholder} className="flex-1 p-2 border border-gray-300 rounded-md" />
-                <button className="px-4 py-2 bg-brown-200 text-white rounded-md hover:bg-gray-400">Update</button>
+                <button className="px-2 py-1 text-sm bg-brown-200 text-white rounded-md hover:bg-gray-400 h-8">Update</button>
               </div>
             ))}
           </div>
