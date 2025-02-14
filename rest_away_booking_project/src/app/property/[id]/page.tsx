@@ -1,9 +1,9 @@
 import Link from "next/link";
-import type { Post } from "@/lib/api";
 import { ArrowLeft } from "lucide-react";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PropertyWrapper } from "@/app/property/_components/PropertyWrapper";
+import { getPost } from "@/lib/api";
 
 export const metadata: Metadata = {
   title: "Property",
@@ -17,11 +17,6 @@ type BlogPostProps = {
   params: Promise<{ id: string }>;
   searchParams?: Promise<SearchParams>;
 };
-
-async function getPost(id: string): Promise<Post> {
-  const data = await fetch(`${process.env.BASE_API_URL}/posts/${id}`);
-  return data.json();
-}
 
 export default async function BlogPost(props: BlogPostProps) {
   const params = await props.params;
