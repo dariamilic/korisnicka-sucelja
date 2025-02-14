@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { supabase } from "@/lib/supabase";
 import Link from "next/link";
+import { useRouter } from 'next/navigation';
+
 
 const SignUpPage = () => {
   const [data, setData] = useState<{
@@ -17,6 +19,8 @@ const SignUpPage = () => {
     date_of_birth: "",
     phone_number: +385,
   });
+  const router = useRouter();
+
   
   const [error, setError] = useState(""); // Greška pri prijavi
 
@@ -51,6 +55,7 @@ const SignUpPage = () => {
     } catch (err: any) {
       setError(err.message || "Something went wrong, please try again.");
     }
+    router.push('/signIn');
   };
 
   return (
@@ -232,6 +237,8 @@ const Form: React.FC<FormProps> = ({ data, handleChange, handleSignUp }) => (
     </div>
     <button
       type="submit"
+      
+
       className="w-full mt-2 py-2 px-4 bg-brown-200 text-white rounded-lg hover:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-[#5B597A]"
     >
       SIGN ME UP
