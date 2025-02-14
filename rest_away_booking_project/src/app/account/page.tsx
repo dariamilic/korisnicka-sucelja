@@ -22,7 +22,7 @@ export default function AccountProfilePage() {
         </p>
 
         {/* Desktop verzija */}
-        <div className="hidden md:flex items-start space-x-20">
+        <div className="hidden lg:flex items-start space-x-20">
           <div className="w-2/3 space-y-4">
             {[
               { label: "Name", id: "name", type: "text", placeholder: "Emily" },
@@ -45,7 +45,7 @@ export default function AccountProfilePage() {
         </div>
 
         {/* Mobilna verzija */}
-        <div className="md:hidden flex flex-col items-start text-center space-y-4">
+        <div className="lg:hidden flex flex-col items-start text-center space-y-4">
           {/* Input polja */}
           <div className="w-full max-w-[90%] space-y-4">
             {[
