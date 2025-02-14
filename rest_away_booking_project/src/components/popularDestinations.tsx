@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 export function PopularDestinations() {
   return (
@@ -10,7 +11,10 @@ export function PopularDestinations() {
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
           {/* First object - Zagreb */}
-          <div className="bg-white p-4 rounded-lg shadow-lg">
+          <Link
+            href={"/search"}
+            className="bg-white p-4 rounded-lg shadow-lg block"
+          >
             <Image
               src="/Zagreb.png"
               alt="Houses on the Sea"
@@ -21,11 +25,12 @@ export function PopularDestinations() {
             <p className="text-center text-lg text-gray-600 font-semibold">
               Zagreb
             </p>
-          </div>
-
+            </Link>
           {/* Second object - Berlin */}
-          <div className="bg-white p-4 rounded-lg shadow-lg">
-            <Image
+          <Link
+            href={"/search"}
+            className="bg-white p-4 rounded-lg shadow-lg block"
+          >            <Image
               src="/Berlin.png"
               alt="Cottages"
               width={500} // Možete prilagoditi veličinu prema potrebama
@@ -35,11 +40,12 @@ export function PopularDestinations() {
             <p className="text-center text-lg text-gray-600 font-semibold">
               Berlin
             </p>
-          </div>
-
+            </Link>
           {/* Third object - Split */}
-          <div className="bg-white p-4 rounded-lg shadow-lg">
-            <Image
+          <Link
+            href={"/search"}
+            className="bg-white p-4 rounded-lg shadow-lg block"
+          >            <Image
               src="/Split.png"
               alt="Apartments"
               width={500} // Možete prilagoditi veličinu prema potrebama
@@ -49,11 +55,12 @@ export function PopularDestinations() {
             <p className="text-center text-lg text-gray-600 font-semibold">
               Split
             </p>
-          </div>
-
+            </Link>
           {/* Fourth object - Paris */}
-          <div className="bg-white p-4 rounded-lg shadow-lg">
-            <Image
+          <Link
+            href={"/search"}
+            className="bg-white p-4 rounded-lg shadow-lg block"
+          >            <Image
               src="/Paris.png"
               alt="Villas"
               width={500} // Možete prilagoditi veličinu prema potrebama
@@ -63,8 +70,7 @@ export function PopularDestinations() {
             <p className="text-center text-lg text-gray-600 font-semibold">
               Paris
             </p>
-          </div>
-        </div>
+            </Link>        </div>
       </div>
     </section>
   );

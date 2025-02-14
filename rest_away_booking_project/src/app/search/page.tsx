@@ -4,6 +4,8 @@ import { useState, useCallback, useEffect } from "react";
 import { createClient } from "contentful";
 import ObjaveCard from "./objaveCard";
 
+
+
 const spaceID = process.env.NEXT_PUBLIC_CONNTENTFUL_SPACE_ID!;
 const accessToken = process.env.NEXT_PUBLIC_CONNTENTFUL_ACCESS_KEY!;
 
@@ -25,6 +27,9 @@ const Home = () => {
   const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
   const [isOpen, setIsOpen] = useState(false);
+
+
+
 
   useEffect(() => {
     const getData = async () => {
@@ -92,6 +97,10 @@ const Home = () => {
   const handleSetIsOpen = useCallback((state: boolean) => {
     setIsOpen(state);
   }, []);
+
+
+
+
 
   return (
     <>

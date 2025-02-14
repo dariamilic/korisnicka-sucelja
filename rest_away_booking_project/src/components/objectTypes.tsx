@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 export function ObjectTypes() {
   return (
@@ -10,7 +11,11 @@ export function ObjectTypes() {
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
           {/* First object - Houses on the sea */}
-          <div className="bg-white p-4 rounded-lg shadow-lg">
+
+          <Link
+            href={"/search"}
+            className="bg-white p-4 rounded-lg shadow-lg block"
+          >
             <div className="relative w-full h-48">
               <Image
                 src="/kucaNaMoru.png"
@@ -24,10 +29,14 @@ export function ObjectTypes() {
             <p className="text-center text-lg text-gray-600 font-semibold">
               Houses on the sea
             </p>
-          </div>
+          </Link>
 
           {/* Second object - Cottages */}
-          <div className="bg-white p-4 rounded-lg shadow-lg">
+          <Link
+            href={"/search"}
+            className="bg-white p-4 rounded-lg shadow-lg block"
+          >
+            {" "}
             <div className="relative w-full h-48">
               <Image
                 src="/kucaUsumi.png"
@@ -36,16 +45,19 @@ export function ObjectTypes() {
                 className="object-cover rounded-lg"
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                 priority={false}
-
               />
             </div>
             <p className="text-center text-lg text-gray-600 font-semibold">
               Cottages
             </p>
-          </div>
+          </Link>
 
           {/* Third object - Apartments */}
-          <div className="bg-white p-4 rounded-lg shadow-lg">
+          <Link
+            href={"/search"}
+            className="bg-white p-4 rounded-lg shadow-lg block"
+          >
+            {" "}
             <div className="relative w-full h-48">
               <Image
                 src="/zgrada.png"
@@ -54,16 +66,18 @@ export function ObjectTypes() {
                 className="object-cover rounded-lg"
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                 priority={false}
-
               />
             </div>
             <p className="text-center text-lg text-gray-600 font-semibold">
               Apartments
             </p>
-          </div>
+          </Link>
 
           {/* Fourth object - Villas */}
-          <div className="bg-white p-4 rounded-lg shadow-lg">
+          <Link
+            href={"/search"}
+            className="bg-white p-4 rounded-lg shadow-lg block"
+          >
             <div className="relative w-full h-48">
               <Image
                 src="/zgradaSaBazenom.png"
@@ -72,13 +86,12 @@ export function ObjectTypes() {
                 className="object-cover rounded-lg"
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                 priority={false}
-
               />
             </div>
             <p className="text-center text-lg text-gray-600 font-semibold">
               Villas
             </p>
-          </div>
+          </Link>
         </div>
       </div>
     </section>
