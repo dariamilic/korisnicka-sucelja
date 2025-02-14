@@ -141,6 +141,7 @@ export function Navigation({ setIsOpen }: NavigationProps) {
           { title: "Home", path: "/" },
           { title: "Property", path: "/property" },
           { title: "Search", path: "/search" },
+          { title: "Support", path: "/support" },
           { title: "Sign Up", path: "/signUp" },
           { title: "Sign In", path: "/signIn" },
         ];
