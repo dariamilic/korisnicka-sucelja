@@ -38,7 +38,7 @@ function processPost(post:Post){
         className="block p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 transition-colors duration-200"
       >
         <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-          Post {id}: {title}
+         {title}
         </h2>
         <p className="font-normal text-gray-700">
           Click to read more about this fascinating topic...
