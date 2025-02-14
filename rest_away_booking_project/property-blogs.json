@@ -1,0 +1,183 @@
+[
+    {
+      "userId": 1,
+      "id": 1,
+      "title": "Luxury Beach House in Malibu",
+      "body": "A beautiful beachfront property offering panoramic ocean views, modern amenities, and a private pool."
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "title": "Spacious Mountain Cottage Retreat",
+      "body": "Nestled in the mountains, this cozy cottage offers peace, solitude, and breathtaking views of the surrounding landscape."
+    },
+    {
+      "userId": 1,
+      "id": 3,
+      "title": "Modern Villa with Private Garden",
+      "body": "A luxurious villa featuring an expansive garden, sleek interior design, and cutting-edge technology."
+    },
+    {
+      "userId": 1,
+      "id": 4,
+      "title": "Charming Countryside House with Farm",
+      "body": "A charming property set in the heart of the countryside, featuring a farmhouse, orchard, and beautiful views."
+    },
+    {
+      "userId": 1,
+      "id": 5,
+      "title": "Sleek Urban Loft in Downtown Area",
+      "body": "A contemporary loft with industrial features and a rooftop terrace offering stunning city views."
+    },
+    {
+      "userId": 1,
+      "id": 6,
+      "title": "Rustic Cabin by the Lake",
+      "body": "A rustic, wooden cabin offering serene views of the lake and a perfect escape for nature lovers."
+    },
+    {
+      "userId": 1,
+      "id": 7,
+      "title": "Secluded Villa on Private Island",
+      "body": "This luxurious villa located on a private island offers exclusivity, ultimate privacy, and magnificent views."
+    },
+    {
+      "userId": 1,
+      "id": 8,
+      "title": "Bright and Airy Beachfront Condo",
+      "body": "A beautifully designed condo offering bright spaces, oceanfront views, and easy access to the beach."
+    },
+    {
+      "userId": 1,
+      "id": 9,
+      "title": "Elegant Mansion in Beverly Hills",
+      "body": "An opulent mansion featuring grand interiors, lavish gardens, and a private cinema in the heart of Beverly Hills."
+    },
+    {
+      "userId": 1,
+      "id": 10,
+      "title": "Cozy Cottage with Flower Garden",
+      "body": "A picturesque cottage surrounded by a lush flower garden and ideal for a quiet, countryside lifestyle."
+    },
+    {
+      "userId": 1,
+      "id": 11,
+      "title": "Modern Villa with Infinity Pool",
+      "body": "This villa features sleek architecture, a beautiful infinity pool, and stunning mountain views."
+    },
+    {
+      "userId": 1,
+      "id": 12,
+      "title": "Charming Tudor Style Home",
+      "body": "A classic Tudor-style home offering traditional design, wood-paneled interiors, and a cozy fireplace."
+    },
+    {
+      "userId": 1,
+      "id": 13,
+      "title": "Luxury Apartment in Central City",
+      "body": "A luxury apartment with high-end finishes, a spacious open-plan layout, and prime location in the city center."
+    },
+    {
+      "userId": 1,
+      "id": 14,
+      "title": "Peaceful Retreat House by the River",
+      "body": "A beautiful riverside retreat offering tranquility, scenic views, and ample space for relaxation."
+    },
+    {
+      "userId": 1,
+      "id": 15,
+      "title": "Eco-Friendly House with Solar Panels",
+      "body": "A sustainable home equipped with solar panels, energy-efficient appliances, and a rainwater harvesting system."
+    },
+    {
+      "userId": 1,
+      "id": 16,
+      "title": "Contemporary Glass House with Open Views",
+      "body": "A glass-walled contemporary house offering unobstructed views of the surrounding landscape and sleek, minimalist design."
+    },
+    {
+      "userId": 1,
+      "id": 17,
+      "title": "Quaint Cottage by the Woods",
+      "body": "A small, charming cottage tucked away in the woods, perfect for weekend getaways and nature exploration."
+    },
+    {
+      "userId": 1,
+      "id": 18,
+      "title": "Grand Villa with Private Estate",
+      "body": "A sprawling villa with an extensive estate, including gardens, a tennis court, and a private helipad."
+    },
+    {
+      "userId": 1,
+      "id": 19,
+      "title": "Coastal Luxury Penthouse",
+      "body": "This penthouse offers luxury living with expansive ocean views, high ceilings, and world-class amenities."
+    },
+    {
+      "userId": 1,
+      "id": 20,
+      "title": "Traditional Colonial Home",
+      "body": "A stately colonial-style home with classic design, a grand staircase, and a lush backyard."
+    },
+    {
+      "userId": 1,
+      "id": 21,
+      "title": "Modern Eco-Villa with Smart Features",
+      "body": "This eco-villa is designed with sustainability in mind, offering smart home technology and energy-efficient features."
+    },
+    {
+      "userId": 1,
+      "id": 22,
+      "title": "Mountain Lodge with Scenic Views",
+      "body": "A cozy mountain lodge offering panoramic views, wooden interiors, and a fireplace for those chilly nights."
+    },
+    {
+      "userId": 1,
+      "id": 23,
+      "title": "Luxury Penthouse with Rooftop Terrace",
+      "body": "A high-end penthouse featuring a spacious rooftop terrace, offering exceptional views of the city skyline."
+    },
+    {
+      "userId": 1,
+      "id": 24,
+      "title": "Seaside Cottage with Wooden Deck",
+      "body": "A charming seaside cottage with a wooden deck, perfect for enjoying sunsets and fresh sea breezes."
+    },
+    {
+      "userId": 1,
+      "id": 25,
+      "title": "Palatial Mansion with Grand Entrance",
+      "body": "This palatial mansion features a grand entrance, marble floors, a sweeping staircase, and luxury finishes throughout."
+    },
+    {
+      "userId": 1,
+      "id": 26,
+      "title": "Trendy Loft in Old Industrial Building",
+      "body": "A modern loft situated in an old industrial building, blending exposed brick with sleek, contemporary design."
+    },
+    {
+      "userId": 1,
+      "id": 27,
+      "title": "Private Villa with Infinity Ocean View",
+      "body": "An exclusive villa with panoramic ocean views, offering ultimate privacy and luxurious living spaces."
+    },
+    {
+      "userId": 1,
+      "id": 28,
+      "title": "Renovated Farmhouse with Modern Touches",
+      "body": "A beautifully renovated farmhouse with a mix of traditional charm and modern amenities."
+    },
+    {
+      "userId": 1,
+      "id": 29,
+      "title": "Eco-Friendly Tiny House Retreat",
+      "body": "A small, sustainable tiny house designed for eco-living, featuring renewable energy systems and water conservation features."
+    },
+    {
+      "userId": 1,
+      "id": 30,
+      "title": "Contemporary City House with Rooftop Garden",
+      "body": "A modern city house with a lush rooftop garden, offering an urban oasis with spectacular views."
+    }
+  ]
+  
