@@ -1,24 +1,13 @@
 type LogoProps = {
-  theme?: "light" | "dark";
   className?: string;
 };
 
-const Logo = ({ theme = "light", className = "" }: LogoProps) => {
+const Logo = ({ className = "" }: LogoProps) => {
   return (
     <p className={`font-lato font-black text-4xl ${className}`}>
-      {theme === "light" ? (
-        <>
-          <span className=" text-brand-primary ">Rest</span>
-          <span className="text-brand-text-strong text-gray-500 ">Away</span>
-          <span className=" text-gray-500 ">.</span>
-        </>
-      ) : (
-        <>
-          <span className="text-brand-stroke-weak">Rest</span>
-          <span className="text-brand-stroke-strong">Away</span>
-          <span className="text-brand-stroke-weak">.</span>
-        </>
-      )}
+      <span className="text-brown-200">Rest</span>
+      <span className="text-brand-text-strong text-gray-500">Away</span>
+      <span className="text-gray-500">.</span>
     </p>
   );
 };
