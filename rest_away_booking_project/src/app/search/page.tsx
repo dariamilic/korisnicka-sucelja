@@ -27,7 +27,7 @@ const Home = () => {
   const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
   const [isOpen, setIsOpen] = useState(false);
-
+  
 
 
 
@@ -559,16 +559,20 @@ const Home = () => {
           </div>
         </div>
 
-          {/* Main Content Section */}
-          <div className="w-full md:w-3/4 px-10 py-14">
-            <div className="text-3xl md:text-3xl font-bold text-gray-700 mb-4 text-center">
-              Our Suggestions:
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredObjave.map((objave) => (
-                <ObjaveCard key={objave.sys.id} objave={objave} />
-              ))}
-            </div>
+      {/* Main Content Section */}
+      <div className="w-full md:w-3/4 px-10 py-14">
+     <div className="text-3xl md:text-3xl font-bold text-gray-700 mb-4 text-center">
+       Our Suggestions:
+        </div>
+        {filteredObjave.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredObjave.map((objave) => (
+              <ObjaveCard key={objave.sys.id} objave={objave} />
+            ))}
+          </div>
+           ) : (
+            <div className="text-center text-gray-500 text-xl mt-12">Sorry, no suggestions available at the moment. Please try adjusting your filters or check back later.</div>
+            )}
           </div>
         </div>
       </div>
