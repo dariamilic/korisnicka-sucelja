@@ -13,35 +13,6 @@ type Page = {
   path: `/${string}`;
 };
 
-/*
-const pages: Page[] = [
-  { title: "Home", path: "/" },
-  {
-    title: "Property",
-    path: "/property",
-  },
-  {
-    title: "Search",
-    path: "/search",
-  },
-  {
-    title: "Account",
-    path: "/account",
-  },
-  {
-    title: "Support",
-    path: "/support",
-  },
-  {
-    title: "Sign up",
-    path: "/signUp",
-  },
-  {
-    title: "Sign in",
-    path: "/signIn",
-  },
-];
-*/
 
 type NavigationProps = {
   isOpen: boolean;
@@ -161,7 +132,7 @@ export function Navigation({ setIsOpen }: NavigationProps) {
           type="button"
           className="inline-flex items-center justify-center p-2 text-main-text-black hover:text-secondary-text-black focus:outline-none"
           aria-controls="mobile-menu"
-         // aria-expanded={isOpen}
+         
         >
           {!isOpen ? (
             <svg
