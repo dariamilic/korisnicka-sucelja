@@ -345,234 +345,234 @@ const Home = () => {
         {/* Ovdje ostavi filtere kako već jesu */}
 
       {/* Left Filters Section */}
-      <div className="w-full pr-24 py-6">
-            <div>
-              {/* Location Filter */}
-              <div className="mb-10">
-                <div className="bg-brown-200 text-brown-600 font-semibold text-sm rounded-full py-1 px-4 inline-block mb-2 ">
-                  Location
-                </div>
-                <input
-                  type="text"
-                  placeholder="Enter location"
-                  className="w-full border border-primary-300 rounded px-4 py-2 focus:outline-none focus:ring focus:ring-gray-400"
-                  onChange={handleLocationChange}
-                />
-              </div>
-
-              {/* Price Range Filter */}
-              <div className="mb-10">
-                <div className="bg-brown-200 text-brown-600 font-semibold text-sm rounded-full py-1 px-4 inline-block mb-2">
-                  Price range
-                </div>
-                <input
-                  type="range"
-                  min="0"
-                  max="9999"
-                  className="w-full"
-                  value={priceRange}
-                  onChange={handlePriceChange}
-                  style={{
-                    background: `linear-gradient(to right, #F59E0B 0%, #F59E0B ${priceRange}%, #D1D5DB ${priceRange}%, #D1D5DB 100%)`,
-                    filter: "invert(20%) sepia(50%) saturate(100%) hue-rotate(5deg)",
-                  }}
-                />
-                <div className="text-sm text-gray-600 mt-2">Selected Price: {priceRange}€</div>
-              </div>
-
-              {/* Amenities Filter */}
-              <div className="mb-10">
-                <div className="bg-brown-200 text-brown-600 font-semibold text-sm rounded-full py-1 px-4 inline-block mb-2">
-                  Amenities Filter
-                </div>
-                <div className="pl-2">
-                  <label className="block mb-2">
-                    <input
-                      type="checkbox"
-                      onChange={() => handleFilterChange("Wi-Fi")}
-                    />{" "}
-                    Wi-Fi
-                  </label>
-                  <label className="block mb-2">
-                    <input
-                      type="checkbox"
-                      onChange={() => handleFilterChange("Air Conditioning")}
-                    />{" "}
-                    Air Conditioning
-                  </label>
-                  <label className="block mb-2">
-                    <input
-                      type="checkbox"
-                      onChange={() => handleFilterChange("Parking")}
-                    />{" "}
-                    Parking
-                  </label>
-                  <label className="block mb-2">
-                    <input
-                      type="checkbox"
-                      onChange={() => handleFilterChange("Elevator")}
-                    />{" "}
-                    Elevator
-                  </label>
-                  <label className="block mb-2">
-                    <input
-                      type="checkbox"
-                      onChange={() => handleFilterChange("Household appliances")}
-                    />{" "}
-                    Household appliances
-                  </label>
-                </div>
-              </div>
-
-              {/* Luxury Amenities Filter */}
-              <div className="mb-10">
-                <div className="bg-brown-200 text-brown-600 font-semibold text-sm rounded-full py-1 px-4 inline-block mb-2">
-                  Luxury Amenities
-                </div>
-                <div className="pl-2">
-                  <label className="block mb-2">
-                    <input
-                      type="checkbox"
-                      onChange={() => handleFilterChange("Swimming pool")}
-                    />{" "}
-                    Swimming pool
-                  </label>
-                  <label className="block mb-2">
-                    <input
-                      type="checkbox"
-                      onChange={() => handleFilterChange("Jacuzzi")}
-                    />{" "}
-                    Jacuzzi
-                  </label>
-                  <label className="block mb-2">
-                    <input
-                      type="checkbox"
-                      onChange={() => handleFilterChange("Sauna")}
-                    />{" "}
-                    Sauna
-                  </label>
-                  <label className="block mb-2">
-                    <input
-                      type="checkbox"
-                      onChange={() => handleFilterChange("Fitness center")}
-                    />{" "}
-                    Fitness center
-                  </label>
-                  <label className="block mb-2">
-                    <input
-                      type="checkbox"
-                      onChange={() => handleFilterChange("Balcony with a view")}
-                    />{" "}
-                    Balcony with a view
-                  </label>
-                </div>
-              </div>
-
-              {/* Practical Options Filter */}
-              <div className="mb-10">
-                <div className="bg-brown-200 text-brown-600 font-semibold text-sm rounded-full py-1 px-4 inline-block mb-2">
-                  Practical Options
-                </div>
-                <div className="pl-2">
-                  <label className="block mb-2">
-                    <input
-                      type="checkbox"
-                      onChange={() => handleFilterChange("Proximity to public transport")}
-                    />{" "}
-                    Proximity to public transport
-                  </label>
-                  <label className="block mb-2">
-                    <input
-                      type="checkbox"
-                      onChange={() => handleFilterChange("Pet-friendly")}
-                    />{" "}
-                    Pet-friendly
-                  </label>
-                </div>
-              </div>
-
-              {/* Type of Space Filter */}
-              <div className="mb-10">
-                <div className="bg-brown-200 text-brown-600 font-semibold text-sm rounded-full py-1 px-4 inline-block mb-2">
-                  Type of Space
-                </div>
-                <div className="pl-2">
-                  <label className="block mb-2">
-                    <input
-                      type="checkbox"
-                      onChange={() => handleTypeChange("Apartment")}
-                    />{" "}
-                    Apartment
-                  </label>
-                  <label className="block mb-2">
-                    <input
-                      type="checkbox"
-                      onChange={() => handleTypeChange("House")}
-                    />{" "}
-                    House
-                  </label>
-                  <label className="block mb-2">
-                    <input
-                      type="checkbox"
-                      onChange={() => handleTypeChange("Cottage")}
-                    />{" "}
-                    Cottage
-                  </label>
-                  <label className="block mb-2">
-                    <input
-                      type="checkbox"
-                      onChange={() => handleTypeChange("Villa")}
-                    />{" "}
-                    Villa
-                  </label>
-                  <label className="block mb-2">
-                    <input
-                      type="checkbox"
-                      onChange={() => handleTypeChange("Shared Housing")}
-                    />{" "}
-                    Shared Housing
-                  </label>
-                  <label className="block mb-2">
-                    <input
-                      type="checkbox"
-                      onChange={() => handleTypeChange("Farmhouse")}
-                    />{" "}
-                    Farmhouse
-                  </label>
-                  <label className="block mb-2">
-                    <input
-                      type="checkbox"
-                      onChange={() => handleTypeChange("Mobile Home")}
-                    />{" "}
-                    Mobile Home
-                  </label>
-                  <label className="block mb-2">
-                    <input
-                      type="checkbox"
-                      onChange={() => handleTypeChange("Bungalow")}
-                    />{" "}
-                    Bungalow
-                  </label>
-                </div>
-              </div>
+      <div className="w-full pr-24 py-6 bg-white">
+        <div>
+          {/* Location Filter */}
+          <div className="mb-10">
+            <div className="bg-brown-200 text-brown-600 font-semibold text-sm rounded-full py-1 px-4 inline-block mb-2 ">
+          Location
             </div>
+            <input
+          type="text"
+          placeholder="Enter location"
+          className="w-full border border-primary-300 rounded px-4 py-2 focus:outline-none focus:ring focus:ring-gray-400"
+          onChange={handleLocationChange}
+            />
+          </div>
+
+          {/* Price Range Filter */}
+          <div className="mb-10">
+            <div className="bg-brown-200 text-brown-600 font-semibold text-sm rounded-full py-1 px-4 inline-block mb-2">
+          Price range
+            </div>
+            <input
+          type="range"
+          min="0"
+          max="9999"
+          className="w-full"
+          value={priceRange}
+          onChange={handlePriceChange}
+          style={{
+            background: `linear-gradient(to right, #F59E0B 0%, #F59E0B ${priceRange}%, #D1D5DB ${priceRange}%, #D1D5DB 100%)`,
+            filter: "invert(20%) sepia(50%) saturate(100%) hue-rotate(5deg)",
+          }}
+            />
+            <div className="text-sm text-gray-600 mt-2">Selected Price: {priceRange}€</div>
+          </div>
+
+          {/* Amenities Filter */}
+          <div className="mb-10">
+            <div className="bg-brown-200 text-brown-600 font-semibold text-sm rounded-full py-1 px-4 inline-block mb-2">
+          Amenities Filter
+            </div>
+            <div className="pl-2">
+          <label className="block mb-2">
+            <input
+              type="checkbox"
+              onChange={() => handleFilterChange("Wi-Fi")}
+            />{" "}
+            Wi-Fi
+          </label>
+          <label className="block mb-2">
+            <input
+              type="checkbox"
+              onChange={() => handleFilterChange("Air Conditioning")}
+            />{" "}
+            Air Conditioning
+          </label>
+          <label className="block mb-2">
+            <input
+              type="checkbox"
+              onChange={() => handleFilterChange("Parking")}
+            />{" "}
+            Parking
+          </label>
+          <label className="block mb-2">
+            <input
+              type="checkbox"
+              onChange={() => handleFilterChange("Elevator")}
+            />{" "}
+            Elevator
+          </label>
+          <label className="block mb-2">
+            <input
+              type="checkbox"
+              onChange={() => handleFilterChange("Household appliances")}
+            />{" "}
+            Household appliances
+          </label>
+            </div>
+          </div>
+
+          {/* Luxury Amenities Filter */}
+          <div className="mb-10">
+            <div className="bg-brown-200 text-brown-600 font-semibold text-sm rounded-full py-1 px-4 inline-block mb-2">
+          Luxury Amenities
+            </div>
+            <div className="pl-2">
+          <label className="block mb-2">
+            <input
+              type="checkbox"
+              onChange={() => handleFilterChange("Swimming pool")}
+            />{" "}
+            Swimming pool
+          </label>
+          <label className="block mb-2">
+            <input
+              type="checkbox"
+              onChange={() => handleFilterChange("Jacuzzi")}
+            />{" "}
+            Jacuzzi
+          </label>
+          <label className="block mb-2">
+            <input
+              type="checkbox"
+              onChange={() => handleFilterChange("Sauna")}
+            />{" "}
+            Sauna
+          </label>
+          <label className="block mb-2">
+            <input
+              type="checkbox"
+              onChange={() => handleFilterChange("Fitness center")}
+            />{" "}
+            Fitness center
+          </label>
+          <label className="block mb-2">
+            <input
+              type="checkbox"
+              onChange={() => handleFilterChange("Balcony with a view")}
+            />{" "}
+            Balcony with a view
+          </label>
+            </div>
+          </div>
+
+          {/* Practical Options Filter */}
+          <div className="mb-10">
+            <div className="bg-brown-200 text-brown-600 font-semibold text-sm rounded-full py-1 px-4 inline-block mb-2">
+          Practical Options
+            </div>
+            <div className="pl-2">
+          <label className="block mb-2">
+            <input
+              type="checkbox"
+              onChange={() => handleFilterChange("Proximity to public transport")}
+            />{" "}
+            Proximity to public transport
+          </label>
+          <label className="block mb-2">
+            <input
+              type="checkbox"
+              onChange={() => handleFilterChange("Pet-friendly")}
+            />{" "}
+            Pet-friendly
+          </label>
+            </div>
+          </div>
+
+          {/* Type of Space Filter */}
+          <div className="mb-10">
+            <div className="bg-brown-200 text-brown-600 font-semibold text-sm rounded-full py-1 px-4 inline-block mb-2">
+          Type of Space
+            </div>
+            <div className="pl-2">
+          <label className="block mb-2">
+            <input
+              type="checkbox"
+              onChange={() => handleTypeChange("Apartment")}
+            />{" "}
+            Apartment
+          </label>
+          <label className="block mb-2">
+            <input
+              type="checkbox"
+              onChange={() => handleTypeChange("House")}
+            />{" "}
+            House
+          </label>
+          <label className="block mb-2">
+            <input
+              type="checkbox"
+              onChange={() => handleTypeChange("Cottage")}
+            />{" "}
+            Cottage
+          </label>
+          <label className="block mb-2">
+            <input
+              type="checkbox"
+              onChange={() => handleTypeChange("Villa")}
+            />{" "}
+            Villa
+          </label>
+          <label className="block mb-2">
+            <input
+              type="checkbox"
+              onChange={() => handleTypeChange("Shared Housing")}
+            />{" "}
+            Shared Housing
+          </label>
+          <label className="block mb-2">
+            <input
+              type="checkbox"
+              onChange={() => handleTypeChange("Farmhouse")}
+            />{" "}
+            Farmhouse
+          </label>
+          <label className="block mb-2">
+            <input
+              type="checkbox"
+              onChange={() => handleTypeChange("Mobile Home")}
+            />{" "}
+            Mobile Home
+          </label>
+          <label className="block mb-2">
+            <input
+              type="checkbox"
+              onChange={() => handleTypeChange("Bungalow")}
+            />{" "}
+            Bungalow
+          </label>
+            </div>
+          </div>
+        </div>
           </div>
         </div>
 
       {/* Main Content Section */}
-      <div className="w-full md:w-3/4 px-10 py-14">
-     <div className="text-3xl md:text-3xl font-bold text-gray-700 mb-4 text-center">
+      <div className="w-full md:w-3/4 px-10 py-14 bg-white">
+         <div className="text-3xl md:text-3xl font-bold text-gray-700 mb-4 text-center">
        Our Suggestions:
         </div>
         {filteredObjave.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredObjave.map((objave) => (
-              <ObjaveCard key={objave.sys.id} objave={objave} />
-            ))}
+        {filteredObjave.map((objave) => (
+          <ObjaveCard key={objave.sys.id} objave={objave} />
+        ))}
           </div>
            ) : (
-            <div className="text-center text-gray-500 text-xl mt-12">Sorry, no suggestions available at the moment. Please try adjusting your filters or check back later.</div>
-            )}
+        <div className="text-center text-gray-500 text-xl mt-12">Sorry, no suggestions available at the moment. Please try adjusting your filters or check back later.</div>
+        )}
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ const SignUpPage = () => {
     email: "",
     password: "",
     date_of_birth: "",
-    phone_number: +385,
+    phone_number: 385,
   });
   const router = useRouter();
 
