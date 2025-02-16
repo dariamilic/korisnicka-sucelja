@@ -77,7 +77,7 @@ export function Footer() {
             </address>
             {/* Social Media Icons */}
             <div className="flex justify-center mt-4 space-x-4">
-              <Link href="/comming_soon"  className="text-gray-600 hover:text-blue-600">
+              <Link aria-label="Facebook icon" href="/comming_soon"  className="text-gray-600 hover:text-blue-600">
                 <svg
                   className="w-6 h-6"
                   fill="currentColor"
@@ -86,7 +86,7 @@ export function Footer() {
                   <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878V14.89h-2.54v-2.89h2.54v-2.2c0-2.506 1.493-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.261c-1.243 0-1.63.771-1.63 1.563v1.872h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
                 </svg>
               </Link>
-              <Link href="/comming_soon" className="text-gray-600 hover:text-blue-600">
+              <Link aria-label=" X icon" href="/comming_soon" className="text-gray-600 hover:text-blue-600">
                 <svg
                   className="w-6 h-6"
                   fill="currentColor"
