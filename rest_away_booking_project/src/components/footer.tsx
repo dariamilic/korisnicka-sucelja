@@ -67,11 +67,11 @@ export function Footer() {
               <br />
               <a
                 href="mailto:restaway@gmail.com"
-                className="hover:underline block mt-2"
+                className="hover:underline block mt-2 mb-2"
               >
                 restaway@gmail.com
               </a>
-              <a href="tel:+385123000" className="hover:underline block">
+              <a href="tel:+385123000" className="hover:underline block mt-2 mb-2">
                 +385 123 000
               </a>
             </address>
