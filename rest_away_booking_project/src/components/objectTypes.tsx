@@ -19,7 +19,7 @@ export function ObjectTypes() {
             <div className="relative w-full h-48">
               <Image
                 src="/kucaNaMoru.png"
-                alt="Houses on the Sea"
+                alt=" "
                 fill
                 className="object-cover rounded-lg"
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw" // Example sizes for responsiveness
@@ -40,7 +40,7 @@ export function ObjectTypes() {
             <div className="relative w-full h-48">
               <Image
                 src="/kucaUsumi.png"
-                alt="Cottages"
+                alt=" "
                 fill
                 className="object-cover rounded-lg"
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
@@ -61,7 +61,7 @@ export function ObjectTypes() {
             <div className="relative w-full h-48">
               <Image
                 src="/zgrada.png"
-                alt="Apartments"
+                alt=" "
                 fill
                 className="object-cover rounded-lg"
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
@@ -81,7 +81,7 @@ export function ObjectTypes() {
             <div className="relative w-full h-48">
               <Image
                 src="/zgradaSaBazenom.png"
-                alt="Villas"
+                alt=" "
                 fill
                 className="object-cover rounded-lg"
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"

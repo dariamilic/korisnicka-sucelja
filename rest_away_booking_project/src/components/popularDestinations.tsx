@@ -17,7 +17,7 @@ export function PopularDestinations() {
           >
             <Image
               src="/Zagreb.png"
-              alt="Houses on the Sea"
+              alt=" "
               width={500} // Možete prilagoditi veličinu prema potrebama
               height={300} // Možete prilagoditi veličinu prema potrebama
               className="w-full h-48 object-cover rounded-lg mb-4"
@@ -32,7 +32,7 @@ export function PopularDestinations() {
             className="bg-white p-4 rounded-lg shadow-lg block"
           >            <Image
               src="/Berlin.png"
-              alt="Cottages"
+              alt=" "
               width={500} // Možete prilagoditi veličinu prema potrebama
               height={300} // Možete prilagoditi veličinu prema potrebama
               className="w-full h-48 object-cover rounded-lg mb-4"
@@ -47,7 +47,7 @@ export function PopularDestinations() {
             className="bg-white p-4 rounded-lg shadow-lg block"
           >            <Image
               src="/Split.png"
-              alt="Apartments"
+              alt=" "
               width={500} // Možete prilagoditi veličinu prema potrebama
               height={300} // Možete prilagoditi veličinu prema potrebama
               className="w-full h-48 object-cover rounded-lg mb-4"
@@ -62,7 +62,7 @@ export function PopularDestinations() {
             className="bg-white p-4 rounded-lg shadow-lg block"
           >            <Image
               src="/Paris.png"
-              alt="Villas"
+              alt=" "
               width={500} // Možete prilagoditi veličinu prema potrebama
               height={300} // Možete prilagoditi veličinu prema potrebama
               className="w-full h-48 object-cover rounded-lg mb-4"
